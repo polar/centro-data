@@ -1,0 +1,20 @@
+<% title "Centro Routes" %>
+
+<table class="table table-striped">
+  <tr>
+    <th>Route Code</th>
+    <th>Pattern</th>
+    <th>Operation</th>
+    <th>KML</th>
+  </tr>
+  <% for centro_route in @centro_routes %>
+      <tr>
+        <td><%= centro_route.route_code %></td>
+        <td><%= centro_route.pattern_code %></td>
+        <td><%= link_to "Download KML As File", download_centro_route_path(centro_route.route_code, :pattern=> centro_route.pattern_code)  %></td>
+        <td><%= centro_route.to_kml %></td>
+      </tr>
+  <% end %>
+</table>
+
+

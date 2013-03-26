@@ -1,0 +1,54 @@
+<h1><%= "Centro Buses" %></h1>
+
+<%= will_paginate @centro_buses, :renderer => BootstrapPagination::Rails %>
+<table class="table table-striped">
+  <tr>
+    <th>Centroid</th>
+    <th>Rt</th>
+    <th>D</th>
+    <th>Dd</th>
+    <th>Dn</th>
+    <th>Lat</th>
+    <th>Lon</th>
+    <th>Pid</th>
+    <th>Pd</th>
+    <th>Run</th>
+    <th>Fs</th>
+    <th>Op</th>
+    <th>Dip</th>
+    <th>Bid</th>
+    <th>Wid1</th>
+    <th>Wid2</th>
+    <th>Time</th>
+    <th colspan="3">Operations</th>
+  </tr>
+  <% for centro_bus in @centro_buses %>
+    <tr>
+      <td><%= centro_bus.centroid %></td>
+      <td><%= centro_bus.rt %></td>
+      <td><%= centro_bus.d %></td>
+      <td><%= centro_bus.dd %></td>
+      <td><%= centro_bus.dn %></td>
+      <td><%= centro_bus.lat %></td>
+      <td><%= centro_bus.lon %></td>
+      <td><%= centro_bus.pid %></td>
+      <td><%= centro_bus.pd %></td>
+      <td><%= centro_bus.run %></td>
+      <td><%= centro_bus.fs %></td>
+      <td><%= centro_bus.op %></td>
+      <td><%= centro_bus.dip %></td>
+      <td><%= centro_bus.bid %></td>
+      <td><%= centro_bus.wid1 %></td>
+      <td><%= centro_bus.wid2 %></td>
+      <td><%= centro_bus.time %></td>
+      <td><%= link_to "Show", centro_bus %></td>
+      <td><%= link_to "Edit", edit_centro_bus_path(centro_bus) %></td>
+      <td><%= link_to "Destroy", centro_bus, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Centro Bus", new_centro_bus_path %></p>
+<p><%= button_to "Start Job", start_jobs_path %></p>
+<p><%= button_to "Stop Job", stop_jobs_path %></p>
+<p><%= link_to "Jobs", jobs_path %></p>

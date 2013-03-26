@@ -1,0 +1,12 @@
+<% title "Delayed/Job" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @job.name %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_delayed_job_path(@job) %> |
+  <%= link_to "Destroy", [:delayed, @job], :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", delayed_jobs_path %>
+</p>

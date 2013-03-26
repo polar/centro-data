@@ -1,0 +1,72 @@
+<%= form_for @centro_bus do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :centroid %><br />
+    <%= f.text_field :centroid %>
+  </p>
+  <p>
+    <%= f.label :rt %><br />
+    <%= f.text_field :rt %>
+  </p>
+  <p>
+    <%= f.label :d %><br />
+    <%= f.text_field :d %>
+  </p>
+  <p>
+    <%= f.label :dd %><br />
+    <%= f.text_field :dd %>
+  </p>
+  <p>
+    <%= f.label :dn %><br />
+    <%= f.text_field :dn %>
+  </p>
+  <p>
+    <%= f.label :lat %><br />
+    <%= f.text_field :lat %>
+  </p>
+  <p>
+    <%= f.label :lon %><br />
+    <%= f.text_field :lon %>
+  </p>
+  <p>
+    <%= f.label :pid %><br />
+    <%= f.text_field :pid %>
+  </p>
+  <p>
+    <%= f.label :pd %><br />
+    <%= f.text_field :pd %>
+  </p>
+  <p>
+    <%= f.label :run %><br />
+    <%= f.text_field :run %>
+  </p>
+  <p>
+    <%= f.label :fs %><br />
+    <%= f.text_field :fs %>
+  </p>
+  <p>
+    <%= f.label :op %><br />
+    <%= f.text_field :op %>
+  </p>
+  <p>
+    <%= f.label :dip %><br />
+    <%= f.number_field :dip %>
+  </p>
+  <p>
+    <%= f.label :bid %><br />
+    <%= f.number_field :bid %>
+  </p>
+  <p>
+    <%= f.label :wid1 %><br />
+    <%= f.text_field :wid1 %>
+  </p>
+  <p>
+    <%= f.label :wid2 %><br />
+    <%= f.text_field :wid2 %>
+  </p>
+  <p>
+    <%= f.label :time %><br />
+    <%= f.text_field :time %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

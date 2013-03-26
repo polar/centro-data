@@ -1,0 +1,16 @@
+<h1><%="Jobs" %></h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+  <% for job in @jobs %>
+    <tr>
+      <td><%= job.name %></td>
+      <td><%= job.payload_object %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= button_to "Start Job", start_jobs_path %></p>
+<p><%= button_to "Stop Job", stop_jobs_path %></p>

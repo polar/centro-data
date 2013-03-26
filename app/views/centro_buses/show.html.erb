@@ -1,0 +1,76 @@
+<%= "Centro Bus" %>
+
+<p>
+  <strong>Centroid:</strong>
+  <%= @centro_bus.centroid %>
+</p>
+<p>
+  <strong>Rt:</strong>
+  <%= @centro_bus.rt %>
+</p>
+<p>
+  <strong>D:</strong>
+  <%= @centro_bus.d %>
+</p>
+<p>
+  <strong>Dd:</strong>
+  <%= @centro_bus.dd %>
+</p>
+<p>
+  <strong>Dn:</strong>
+  <%= @centro_bus.dn %>
+</p>
+<p>
+  <strong>Lat:</strong>
+  <%= @centro_bus.lat %>
+</p>
+<p>
+  <strong>Lon:</strong>
+  <%= @centro_bus.lon %>
+</p>
+<p>
+  <strong>Pid:</strong>
+  <%= @centro_bus.pid %>
+</p>
+<p>
+  <strong>Pd:</strong>
+  <%= @centro_bus.pd %>
+</p>
+<p>
+  <strong>Run:</strong>
+  <%= @centro_bus.run %>
+</p>
+<p>
+  <strong>Fs:</strong>
+  <%= @centro_bus.fs %>
+</p>
+<p>
+  <strong>Op:</strong>
+  <%= @centro_bus.op %>
+</p>
+<p>
+  <strong>Dip:</strong>
+  <%= @centro_bus.dip %>
+</p>
+<p>
+  <strong>Bid:</strong>
+  <%= @centro_bus.bid %>
+</p>
+<p>
+  <strong>Wid1:</strong>
+  <%= @centro_bus.wid1 %>
+</p>
+<p>
+  <strong>Wid2:</strong>
+  <%= @centro_bus.wid2 %>
+</p>
+<p>
+  <strong>Time:</strong>
+  <%= @centro_bus.time %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_centro_bus_path(@centro_bus) %> |
+  <%= link_to "Destroy", @centro_bus, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", centro_buses_path %>
+</p>

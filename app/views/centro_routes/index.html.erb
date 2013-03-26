@@ -1,0 +1,15 @@
+<h1><%= "Centro Routes" %></h1>
+
+<table class="table table-striped">
+  <tr>
+    <th>Route Code</th>
+    <th>Operations</th>
+  </tr>
+  <% for code in @centro_route_codes %>
+    <tr>
+      <td><%= code %></td>
+      <td><%= link_to "Show", centro_route_path(code) %></td>
+    </tr>
+  <% end %>
+</table>
+

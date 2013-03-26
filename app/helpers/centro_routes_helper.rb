@@ -1,0 +1,2 @@
+module CentroRoutesHelper
+end
