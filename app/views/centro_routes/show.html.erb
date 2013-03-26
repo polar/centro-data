@@ -4,15 +4,22 @@
   <tr>
     <th>Route Code</th>
     <th>Pattern</th>
-    <th>Operation</th>
-    <th>KML</th>
+    <th>Stops</th>
+    <th colspan="2">Operations</th>
   </tr>
   <% for centro_route in @centro_routes %>
       <tr>
         <td><%= centro_route.route_code %></td>
         <td><%= centro_route.pattern_code %></td>
-        <td><%= link_to "Download KML As File", download_centro_route_path(centro_route.route_code, :pattern=> centro_route.pattern_code)  %></td>
-        <td><%= centro_route.to_kml %></td>
+        <td>
+          <% centro_route.stops.each do |x| %>
+              <%= x.name %>
+              <br/>
+          <% end %>
+        </td>
+        <td><%= link_to "Download KML w/ Stops", download_centro_route_path(centro_route.route_code, :pattern => centro_route.pattern_code, :with_stops => 1), :class => "btn btn-mini" %></td>
+        <td><%= link_to "Download KML w/o Stops", download_centro_route_path(centro_route.route_code, :pattern => centro_route.pattern_code), :class => "btn btn-mini" %></td>
+
       </tr>
   <% end %>
 </table>
