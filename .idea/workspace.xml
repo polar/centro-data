@@ -20,7 +20,7 @@
     <file path="/will_paginate.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364305263114" ignored="false" />
     <file path="/nify.css" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364305492496" ignored="false" />
     <file path="/application.html.erb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364305923588" ignored="false" />
-    <file path="/centro_route.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364319623426" ignored="false" />
+    <file path="/centro_route.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364320299870" ignored="false" />
     <file path="/centro_routes_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364319768680" ignored="false" />
     <file path="/show.html.erb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364319893612" ignored="false" />
     <file path="/production.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364316662601" ignored="false" />
@@ -77,10 +77,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/centro_routes/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="13" selection-start="473" selection-end="473" vertical-scroll-proportion="0.5263158">
+            <state line="18" column="13" selection-start="473" selection-end="473" vertical-scroll-proportion="-10.416667">
               <folding />
             </state>
           </provider>
@@ -104,10 +104,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="centro_route.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="centro_route.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/centro_route.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="55" selection-start="2020" selection-end="2020" vertical-scroll-proportion="0.0">
+            <state line="78" column="14" selection-start="1676" selection-end="1676" vertical-scroll-proportion="0.225">
               <folding />
             </state>
           </provider>
@@ -159,9 +159,9 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
-        <option value="$PROJECT_DIR$/app/models/centro_route.rb" />
         <option value="$PROJECT_DIR$/app/controllers/centro_routes_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/centro_routes/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/centro_route.rb" />
       </list>
     </option>
   </component>
@@ -173,10 +173,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1411" />
-    <option name="y" value="27" />
+    <option name="x" value="1427" />
+    <option name="y" value="35" />
     <option name="width" value="1370" />
-    <option name="height" value="998" />
+    <option name="height" value="886" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -924,7 +924,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1411" y="27" width="1370" height="998" extended-state="0" />
+    <frame x="1427" y="35" width="1370" height="886" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299435" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -932,11 +932,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3090909" sideWeight="0.6662857" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3090909" sideWeight="0.61730015" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33371428" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38269988" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1094,13 +1094,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/centro_route.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="55" selection-start="2020" selection-end="2020" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/centro_routes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="30" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0">
@@ -1110,7 +1103,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/centro_routes/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="13" selection-start="473" selection-end="473" vertical-scroll-proportion="0.5263158">
+        <state line="18" column="13" selection-start="473" selection-end="473" vertical-scroll-proportion="-10.416667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/centro_route.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="14" selection-start="1676" selection-end="1676" vertical-scroll-proportion="0.225">
           <folding />
         </state>
       </provider>

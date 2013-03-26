@@ -74,6 +74,9 @@ class CentroRoute
     route = Hash.from_xml open(url(route_code))
     if route
       routes = route["route"]["pas"]["pa"]
+      if routes.is_a? Hash
+        routes = [routes]
+      end
       for r in routes
         if !r["pt"].nil?
           if r["pt"].is_a? Array
