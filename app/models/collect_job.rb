@@ -23,9 +23,10 @@ class CollectJob < Struct.new(:queue, :period, :route_codes)
       end
     end
 
-    Delayed::Job.enqueue(self, :queue => queue, :run_at => Time.now + period.seconds)
   rescue Exception => boom
     puts "Error #{boom}"
     p boom.backtrace
+  ensure
+    Delayed::Job.enqueue(self, :queue => queue, :run_at => Time.now + period.seconds)
   end
 end
