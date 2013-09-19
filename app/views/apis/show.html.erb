@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<h1>API for <%= @api.name || params[:slug] %></h1>
+<table>
+  <tbody>
+    <% for attr in @api.attributes do %>
+      <tr>
+        <td><%= attr[0]%></td><td><%= attr[1] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+
+</table>
+
+<%= button_to "Refresh", refresh_api_path(0, :slug => params[:slug])  %>

@@ -1,0 +1,22 @@
+<h1>Listing masters</h1>
+
+<table>
+
+  <tbody>
+    <% @masters.each do |master| %>
+      <tr>
+        <td><%= link_to master.name, master_path(master) %>
+        <div><%= master.slug %></div>
+        <div><%= [master.lon, master.lat] %></div>
+        <div><%= master.bounds %></div>
+        <div><%= master.api %></div>
+        <div><%= master.title %></div>
+        <div><%= master.description %></div></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= button_to 'Refresh', refresh_masters_path %>
