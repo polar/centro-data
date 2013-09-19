@@ -1,7 +1,7 @@
 
 
 class CentroBus < ActiveRecord::Base
-  attr_accessible :centroid, :rt, :d, :dd, :dn, :lat, :lon, :pid, :pd, :run, :fs, :op, :dip, :bid, :wid1, :wid2, :time
+  #attr_accessible :centroid, :rt, :d, :dd, :dn, :lat, :lon, :pid, :pd, :run, :fs, :op, :dip, :bid, :wid1, :wid2, :time
 
 
   def self.make(time, hash)

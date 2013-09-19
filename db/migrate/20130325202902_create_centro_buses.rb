@@ -3,6 +3,7 @@ class CreateCentroBuses < ActiveRecord::Migration
     create_table :centro_buses do |t|
       t.string    :centroid
       t.string    :rt
+      t.string    :rtdd
       t.string    :d
       t.string    :dd
       t.string    :dn

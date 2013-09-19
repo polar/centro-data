@@ -13,4 +13,15 @@ CentroData::Application.routes.draw do
     end
   end
   resources :centro_buses
+
+  resources :masters do
+    collection do
+      post :refresh
+    end
+  end
+  resources :apis do
+    member do
+      post :refresh
+    end
+  end
 end
