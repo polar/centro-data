@@ -51,8 +51,8 @@ class ApisController < ApplicationController
   def refresh
     slug = params[:slug]
     master = Master.where(:slug => slug).first
-    resp = Hash.from_xml open(master.api)
-    api = Api.new
+    resp = Hash.from_xml open(master.api_url)
+    api = Api.new(:master => master)
     api.from_hash(resp["API"])
     api.save
     redirect_to api_path(api, :slug => slug)

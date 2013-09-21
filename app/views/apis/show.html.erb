@@ -13,3 +13,5 @@
 </table>
 
 <%= button_to "Refresh", refresh_api_path(0, :slug => params[:slug])  %>
+
+<%= link_to "Routes", routes_path(:api_id => @api.id) %>

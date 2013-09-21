@@ -58,6 +58,7 @@ ActiveRecord::Schema.define(version: 20130919190512) do
     t.string   "message_click_thru"
     t.string   "banner_click_thru"
     t.string   "banner_image"
+    t.integer  "master_id"
   end
 
   create_table "centro_buses", force: true do |t|
@@ -101,7 +102,7 @@ ActiveRecord::Schema.define(version: 20130919190512) do
 
   create_table "journeys", force: true do |t|
     t.string  "persistentid"
-    t.string  "type"
+    t.string  "route_type"
     t.float   "dir"
     t.float   "sort"
     t.string  "route_code"
@@ -117,17 +118,21 @@ ActiveRecord::Schema.define(version: 20130919190512) do
     t.float   "se_lon"
     t.float   "se_lat"
     t.string  "patternid"
+    t.integer "api_id"
+    t.integer "pattern_id"
+    t.integer "master_id"
   end
 
   create_table "masters", force: true do |t|
-    t.string "name"
-    t.string "slug"
-    t.float  "lon"
-    t.float  "lat"
-    t.string "bounds"
-    t.string "api"
-    t.string "title"
-    t.text   "description"
+    t.string  "name"
+    t.string  "slug"
+    t.float   "lon"
+    t.float   "lat"
+    t.string  "bounds"
+    t.string  "api_url"
+    t.string  "title"
+    t.text    "description"
+    t.integer "api_id"
   end
 
   create_table "messages", force: true do |t|
@@ -139,19 +144,23 @@ ActiveRecord::Schema.define(version: 20130919190512) do
     t.integer  "version"
     t.string   "title"
     t.text     "content"
+    t.integer  "api_id"
+    t.integer  "master_id"
   end
 
   create_table "patterns", force: true do |t|
     t.string  "persistentid"
-    t.string  "type"
+    t.string  "route_type"
     t.integer "version"
     t.float   "distance"
     t.string  "coords"
+    t.integer "api_id"
+    t.integer "master_id"
   end
 
   create_table "routes", force: true do |t|
     t.string  "persistentid"
-    t.string  "type"
+    t.string  "route_type"
     t.string  "name"
     t.string  "route_code"
     t.float   "sort"
@@ -161,15 +170,19 @@ ActiveRecord::Schema.define(version: 20130919190512) do
     t.float   "se_lon"
     t.float   "se_lat"
     t.string  "patternids"
+    t.integer "api_id"
+    t.integer "master_id"
   end
 
   create_table "user_logins", force: true do |t|
-    t.string "name"
-    t.string "email"
-    t.string "roles"
-    t.string "role_intent"
-    t.string "auth_token"
-    t.string "status"
+    t.string  "name"
+    t.string  "email"
+    t.string  "roles"
+    t.string  "role_intent"
+    t.string  "auth_token"
+    t.string  "status"
+    t.integer "api_id"
+    t.integer "master_id"
   end
 
 end

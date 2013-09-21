@@ -1,6 +1,8 @@
 class Api < ActiveRecord::Base
   serialize :box, Array
 
+  belongs_to :master
+
   def from_hash(hash)
     hash.each_pair do |k,v|
       case k
@@ -15,8 +17,13 @@ class Api < ActiveRecord::Base
           self.box = v.split(",").map {|x| x.to_f}
         when "Message"
           # Not fully realized yet.
-          message = Message.new
-          message.from_hash(v)
+          if !v.is_a? Array
+            v = [v]
+          end
+          for m in v do
+            message = Message.new
+            message.from_hash(m)
+          end
         else
           self.send("#{k.underscore}=", v)
       end

@@ -48,8 +48,9 @@ class MastersController < ApplicationController
     Master.destroy_all
     resp = Hash.from_xml open(url)
     for m in resp["masters"]["master"] do
-      m["bounds"] = m["bounds"].split(".").map {|x| x.to_f}
-      master = Master.new(m)
+      m["bounds"] = m["bounds"].split(",").map {|x| x.to_f}
+      master = Master.new()
+      master.from_hash(m)
       master.save
     end
     redirect_to masters_path

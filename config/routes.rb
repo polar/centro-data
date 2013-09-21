@@ -24,4 +24,16 @@ CentroData::Application.routes.draw do
       post :refresh
     end
   end
+
+  resources :routes do
+    member do
+      post :refresh
+    end
+  end
+  resources :journeys do
+    member do
+      post :refresh
+    end
+  end
+  resources :patterns
 end
