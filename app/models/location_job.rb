@@ -133,8 +133,8 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
           if r[:time_diff] > 0
             centro_bus.journey =  r[:journey]
             centro_bus.save
-            journey.centro_bus = centro_bus
-            journey.save
+            centro_bus.journey.centro_bus = centro_bus
+            centro_bus.journey.save
             break
           end
         end
