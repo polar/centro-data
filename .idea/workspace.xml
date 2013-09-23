@@ -8,12 +8,12 @@
     <ignored path="centro-data.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/database.yml" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379953549788" ignored="false" />
-    <file path="/Dummy.txt" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379954077384" ignored="false" />
+    <file path="/Dummy.txt" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379954396654" ignored="false" />
     <file path="/20130325202902_create_centro_buses.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379873900440" ignored="false" />
     <file path="/centro_bus.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379947366814" ignored="false" />
     <file path="/Gemfile" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379705392778" ignored="false" />
     <file path="/collect_job.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379862897292" ignored="false" />
-    <file path="/Procfile" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379954384158" ignored="false" />
+    <file path="/Procfile" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379954536385" ignored="false" />
     <file path="/dependencies.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364249679312" ignored="false" />
     <file path="/jobs_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379952377338" ignored="false" />
     <file path="/routes.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379951928378" ignored="false" />
@@ -195,7 +195,7 @@
       <file leaf-file-name="Procfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="45" selection-start="105" selection-end="105" vertical-scroll-proportion="0.029126214">
+            <state line="1" column="66" selection-start="126" selection-end="126" vertical-scroll-proportion="0.029126214">
               <folding />
             </state>
           </provider>
@@ -1020,7 +1020,11 @@
       <created>1379954081424</created>
       <updated>1379954081424</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="On the way to examining Busme! api.">
+      <created>1379954398912</created>
+      <updated>1379954398912</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1240,7 +1244,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="45" selection-start="105" selection-end="105" vertical-scroll-proportion="0.029126214">
+        <state line="1" column="66" selection-start="126" selection-end="126" vertical-scroll-proportion="0.029126214">
           <folding />
         </state>
       </provider>
