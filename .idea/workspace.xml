@@ -2,33 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abc7cc8c-b95d-468d-8a48-7c6a76d34971" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/mailers/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/mailers/route.rb" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/location_boxing.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/location_job.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/refresh_job.rb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/masters/_form.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/masters/edit.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/masters/new.html.erb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130325202902_create_centro_buses.rb" afterPath="$PROJECT_DIR$/db/migrate/20130325202902_create_centro_buses.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/api.rb" afterPath="$PROJECT_DIR$/app/models/api.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/apis_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/apis_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/centro_bus.rb" afterPath="$PROJECT_DIR$/app/models/centro_bus.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/apis/index.html.erb" afterPath="$PROJECT_DIR$/app/views/apis/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/journey.rb" afterPath="$PROJECT_DIR$/app/models/journey.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/master.rb" afterPath="$PROJECT_DIR$/app/models/master.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/masters_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/masters_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/pattern.rb" afterPath="$PROJECT_DIR$/app/models/pattern.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/route.rb" afterPath="$PROJECT_DIR$/app/models/route.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/apis/show.html.erb" afterPath="$PROJECT_DIR$/app/views/apis/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/masters/show.html.erb" afterPath="$PROJECT_DIR$/app/views/masters/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="centro-data.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/database.yml" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379443048778" ignored="false" />
-    <file path="/Dummy.txt" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379795936994" ignored="false" />
-    <file path="/20130325202902_create_centro_buses.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379609021115" ignored="false" />
-    <file path="/centro_bus.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379608959629" ignored="false" />
+    <file path="/Dummy.txt" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379903644033" ignored="false" />
+    <file path="/20130325202902_create_centro_buses.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379873900440" ignored="false" />
+    <file path="/centro_bus.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379891106211" ignored="false" />
     <file path="/Gemfile" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379705392778" ignored="false" />
-    <file path="/collect_job.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364332459792" ignored="false" />
+    <file path="/collect_job.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379862897292" ignored="false" />
     <file path="/Procfile" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1368210443953" ignored="false" />
     <file path="/dependencies.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364249679312" ignored="false" />
     <file path="/jobs_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364304509943" ignored="false" />
-    <file path="/routes.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379794387221" ignored="false" />
-    <file path="/index.html.erb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379790539876" ignored="false" />
+    <file path="/routes.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379878670319" ignored="false" />
+    <file path="/index.html.erb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379868250318" ignored="false" />
     <file path="/application.css" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364252351889" ignored="false" />
     <file path="/centro_buses_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364307521454" ignored="false" />
     <file path="/will_paginate.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364305263114" ignored="false" />
@@ -36,7 +43,7 @@
     <file path="/application.html.erb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364305923588" ignored="false" />
     <file path="/centro_route.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364320299870" ignored="false" />
     <file path="/centro_routes_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364319768680" ignored="false" />
-    <file path="/show.html.erb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379801029249" ignored="false" />
+    <file path="/show.html.erb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379892076230" ignored="false" />
     <file path="/production.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379694458717" ignored="false" />
     <file path="/application.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1368191006307" ignored="false" />
     <file path="$PROJECT_DIR$/../buspass.web/app/assets/javascripts/routing.js" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364326112258" ignored="false" />
@@ -76,7 +83,7 @@
     <file path="$PROJECT_DIR$/../buspass.web/app/models/apis/discovery1.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364757805728" ignored="false" />
     <file path="/discovery1.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364755812969" ignored="false" />
     <file path="$PROJECT_DIR$/../buspass.web/app/models/apis/v1.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364841984455" ignored="false" />
-    <file path="/v1.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364841979023" ignored="false" />
+    <file path="/v1.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379891874481" ignored="false" />
     <file path="$PROJECT_DIR$/../buspass.web/app/helpers/activements_helper.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1368190425908" ignored="false" />
     <file path="/activements_helper.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1368190421792" ignored="false" />
     <file path="$PROJECT_DIR$/../buspass.web/app/helpers/delayed_jobs_helper.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1368190444080" ignored="false" />
@@ -90,7 +97,7 @@
     <file path="$PROJECT_DIR$/../busme.swifty/swiftiply.yaml" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1368200392339" ignored="false" />
     <file path="/swiftiply.yaml" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1368200392339" ignored="false" />
     <file path="/swiftiplyctl" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1368194770261" ignored="false" />
-    <file path="/a.dummy" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379698783625" ignored="false" />
+    <file path="/a.dummy" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379869038460" ignored="false" />
     <file path="$PROJECT_DIR$/../busme.swifty/Gemfile" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1368206608051" ignored="false" />
     <file path="/rogue.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1368217510619" ignored="false" />
     <file path="$PROJECT_DIR$/../busme.swifty/aa_creds.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1368201660289" ignored="false" />
@@ -124,7 +131,7 @@
     <file path="/aa_creds_production.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379521322892" ignored="false" />
     <file path="$PROJECT_DIR$/../glpf/public/assets/manifest-89dc0c462496220ea4951f69645d0c43.json" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379520955842" ignored="false" />
     <file path="$PROJECT_DIR$/../glpf/config/environments/production.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379694458717" ignored="false" />
-    <file path="/fragment.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379798676913" ignored="false" />
+    <file path="/fragment.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379902724854" ignored="false" />
     <file path="$PROJECT_DIR$/../glpf/app/views/layouts/application.html.haml" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379533770939" ignored="false" />
     <file path="/application.html.haml" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379533770939" ignored="false" />
     <file path="$PROJECT_DIR$/../glpf/app/views/shared/_header.html.haml" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379533864101" ignored="false" />
@@ -137,20 +144,20 @@
     <file path="$PROJECT_DIR$/../glpf/INSTALL" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379536926456" ignored="false" />
     <file path="/development.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379607307561" ignored="false" />
     <file path="/busme_routes_job.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379616138781" ignored="false" />
-    <file path="/pattern.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379799869270" ignored="false" />
-    <file path="/20130919182212_create_journeys.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379799446066" ignored="false" />
-    <file path="/route.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379801045505" ignored="false" />
+    <file path="/pattern.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379866755707" ignored="false" />
+    <file path="/20130919182212_create_journeys.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379892129175" ignored="false" />
+    <file path="/route.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379870714065" ignored="false" />
     <file path="/20130919183737_create_routes.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379799458287" ignored="false" />
-    <file path="/20130919182618_create_patterns.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379801136017" ignored="false" />
-    <file path="/api.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379794622199" ignored="false" />
+    <file path="/20130919182618_create_patterns.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379866376059" ignored="false" />
+    <file path="/api.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379864300136" ignored="false" />
     <file path="/user_login.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379617274264" ignored="false" />
     <file path="/master.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379795127096" ignored="false" />
-    <file path="/masters_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379795118745" ignored="false" />
-    <file path="/apis_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379795436767" ignored="false" />
+    <file path="/masters_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379889670193" ignored="false" />
+    <file path="/apis_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379876075371" ignored="false" />
     <file path="/20130919185031_create_apis.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379793092069" ignored="false" />
     <file path="/message.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379623266879" ignored="false" />
-    <file path="$PROJECT_DIR$/../buspass-web/app/models/apis/v1.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379623880318" ignored="false" />
-    <file path="/routes_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379800883233" ignored="false" />
+    <file path="$PROJECT_DIR$/../buspass-web/app/models/apis/v1.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379898523358" ignored="false" />
+    <file path="/routes_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379866914748" ignored="false" />
     <file path="$PROJECT_DIR$/../communityengine/config/initializers/mce_options.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379704835490" ignored="false" />
     <file path="/mce_options.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379704701471" ignored="false" />
     <file path="$PROJECT_DIR$/../communityengine/app/controllers/users_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379701565476" ignored="false" />
@@ -163,13 +170,17 @@
     <file path="/CHANGELOG" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379705213496" ignored="false" />
     <file path="$PROJECT_DIR$/../communityengine/lib/community_engine/version.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379705290985" ignored="false" />
     <file path="$PROJECT_DIR$/../communityengine/community_engine.gemspec" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379706294170" ignored="false" />
-    <file path="/temp.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379789089752" ignored="false" />
-    <file path="/patterns_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379792786030" ignored="false" />
+    <file path="/temp.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379867324353" ignored="false" />
+    <file path="/patterns_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379867777261" ignored="false" />
     <file path="/20130919190512_create_masters.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379794973286" ignored="false" />
-    <file path="/journey.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379801065222" ignored="false" />
-    <file path="/journeys_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379800742361" ignored="false" />
+    <file path="/journey.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379894311195" ignored="false" />
+    <file path="/journeys_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379867727621" ignored="false" />
     <file path="/20130919185321_create_messages.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379794930887" ignored="false" />
     <file path="/20130919190044_create_user_logins.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379794946263" ignored="false" />
+    <file path="/refresh_job.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379897529997" ignored="false" />
+    <file path="/location_job.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379901491380" ignored="false" />
+    <file path="/location_boxing.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379894339848" ignored="false" />
+    <file path="/Ruby Console" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379903090470" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,91 +200,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="journeys_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/journeys_controller.rb">
+      <file leaf-file-name="runtime.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///usr/local/rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/runtime.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="77" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0">
+            <state line="17" column="0" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="patterns_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/patterns_controller.rb">
+      <file leaf-file-name="content_length.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///usr/local/rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/content_length.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="14" column="0" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pattern.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/pattern.rb">
+      <file leaf-file-name="connection.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///usr/local/rvm/gems/ruby-2.0.0-p247/gems/thin-1.5.1/lib/thin/connection.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="68" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0">
+            <state line="82" column="0" selection-start="2413" selection-end="2413" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="journey.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/journey.rb">
+      <file leaf-file-name="eventmachine.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///usr/local/rvm/gems/ruby-2.0.0-p247/gems/eventmachine-1.0.3/lib/eventmachine.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="34" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0">
+            <state line="1433" column="0" selection-start="55105" selection-end="55105" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20130919182212_create_journeys.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20130919182212_create_journeys.rb">
+      <file leaf-file-name="location_job.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/location_job.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="22" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
+            <state line="143" column="0" selection-start="4552" selection-end="4552" vertical-scroll-proportion="0.33193278">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <file leaf-file-name="refresh_job.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/refresh_job.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="5" selection-start="450" selection-end="450" vertical-scroll-proportion="0.0">
+            <state line="138" column="17" selection-start="3228" selection-end="3228" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/routes_controller.rb">
+      <file leaf-file-name="router.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///usr/local/rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="14" selection-start="1346" selection-end="1346" vertical-scroll-proportion="-1.1884369">
+            <state line="72" column="0" selection-start="1865" selection-end="1865" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20130919182618_create_patterns.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20130919182618_create_patterns.rb">
+      <file leaf-file-name="etag.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///usr/local/rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/etag.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="26" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
+            <state line="24" column="0" selection-start="882" selection-end="882" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/routes/show.html.erb">
+      <file leaf-file-name="read.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///usr/local/rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.0/lib/active_record/attribute_methods/read.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="2" selection-start="576" selection-end="576" vertical-scroll-proportion="-9.375">
+            <state line="53" column="0" selection-start="2387" selection-end="2387" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="route.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/route.rb">
+      <file leaf-file-name="location_boxing.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/location_boxing.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="40" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0">
+            <state line="857" column="0" selection-start="26288" selection-end="26288" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -303,22 +314,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/db/migrate/20130919190044_create_user_logins.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130919190512_create_masters.rb" />
-        <option value="$PROJECT_DIR$/app/models/master.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/apis_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/masters_controller.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130919182212_create_journeys.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130919183737_create_routes.rb" />
-        <option value="$PROJECT_DIR$/app/views/patterns/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/pattern.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/journeys_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/routes_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/routes/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/masters/routes/show.html.erb" />
         <option value="$PROJECT_DIR$/app/models/route.rb" />
+        <option value="$PROJECT_DIR$/app/models/collect_job.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130325202902_create_centro_buses.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/apis_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/apis/show.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/masters/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/masters_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/centro_bus.rb" />
+        <option value="$PROJECT_DIR$/app/views/masters/journeys/show.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130919182212_create_journeys.rb" />
         <option value="$PROJECT_DIR$/app/models/journey.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130919182618_create_patterns.rb" />
+        <option value="$PROJECT_DIR$/app/models/location_boxing.rb" />
+        <option value="$PROJECT_DIR$/app/models/refresh_job.rb" />
+        <option value="$PROJECT_DIR$/app/models/location_job.rb" />
       </list>
     </option>
   </component>
@@ -330,7 +341,6 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="21" />
     <option name="width" value="1280" />
     <option name="height" value="1024" />
   </component>
@@ -494,28 +504,6 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="centro-data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="centro-data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -554,6 +542,62 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="masters" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="centro-data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="centro-data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="masters" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patterns" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="centro-data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="centro-data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="masters" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -651,6 +695,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="masters" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="centro-data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="centro-data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="delayed" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -668,17 +734,21 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../centro_integration" />
     <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
+    <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/models" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/script" />
       <recent name="$PROJECT_DIR$/app/assets/stylesheets" />
       <recent name="$PROJECT_DIR$/app/assets/javascripts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/masters" />
+      <recent name="$PROJECT_DIR$/app/controllers/masters" />
       <recent name="$PROJECT_DIR$/app/assets/stylesheets" />
       <recent name="$PROJECT_DIR$/app/views/jobs" />
     </key>
@@ -1138,15 +1208,21 @@
       <created>1379623627714</created>
       <updated>1379623627714</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="On the way to examining Busme! api.">
+      <created>1379801349379</created>
+      <updated>1379801349379</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="21" width="1280" height="1024" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1280" height="1024" extended-state="0" />
+    <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32741398" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32741398" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33794788" sideWeight="0.5971143" order="0" side_tool="false" content_ui="combo" />
@@ -1158,8 +1234,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32819384" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32741398" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1233,14 +1307,68 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/models/api.rb</url>
-          <line>23</line>
+          <line>26</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/models/location_job.rb</url>
+          <line>18</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="18" />
+      <option name="time" value="46" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file:///usr/local/rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/callbacks.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="373" column="0" selection-start="11770" selection-end="11770" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="680" selection-end="680" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/debug_exceptions.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.0/lib/rails/rack/logger.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/request_id.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="1007" selection-end="1007" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/runtime.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file:///usr/local/rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/content_length.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
@@ -1262,93 +1390,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/rvm/gems/ruby-2.0.0-p247/gems/activemodel-4.0.0/lib/active_model/serializers/xml.rb">
+    <entry file="file:///usr/local/rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.0/lib/active_record/attribute_methods/read.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="232" column="0" selection-start="7529" selection-end="7529" vertical-scroll-proportion="0.0">
+        <state line="53" column="0" selection-start="2387" selection-end="2387" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130919183737_create_routes.rb">
+    <entry file="file:///usr/local/rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="22" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
+        <state line="72" column="0" selection-start="1865" selection-end="1865" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/patterns/show.html.erb">
+    <entry file="file:///usr/local/rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/etag.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="7" selection-start="79" selection-end="79" vertical-scroll-proportion="-3.125">
+        <state line="24" column="0" selection-start="882" selection-end="882" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130919182212_create_journeys.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/location_boxing.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="22" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
+        <state line="857" column="0" selection-start="26288" selection-end="26288" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/routes/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/models/refresh_job.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="2" selection-start="576" selection-end="576" vertical-scroll-proportion="-9.375">
+        <state line="138" column="17" selection-start="3228" selection-end="3228" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/journey.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/location_job.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="34" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130919182618_create_patterns.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="26" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/pattern.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="68" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/route.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="40" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="5" selection-start="450" selection-end="450" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/journeys_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="77" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/patterns_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/routes_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="14" selection-start="1346" selection-end="1346" vertical-scroll-proportion="-1.1884369">
+        <state line="143" column="0" selection-start="4552" selection-end="4552" vertical-scroll-proportion="0.33193278">
           <folding />
         </state>
       </provider>

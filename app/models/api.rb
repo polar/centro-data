@@ -3,6 +3,9 @@ class Api < ActiveRecord::Base
 
   belongs_to :master
 
+  has_many :routes
+  has_many :journeys
+
   def from_hash(hash)
     hash.each_pair do |k,v|
       case k

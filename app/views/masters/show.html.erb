@@ -1,6 +1,83 @@
 <p id="notice"><%= notice %></p>
 
-<%= link_to "Api", api_path(:slug => @master.slug) %>
+<h1>Master <%= @master.name %></h1>
+<h2>Routes</h2>
+<table>
+  <thead>
+  <tr>
+    <th>Route</th>
+    <th>Journey</th>
+    <th>Code</th>
+    <th>Persistent Id</th>
+    <th>Version</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% for route in @master.routes do %>
+      <tr>
+        <td><%= link_to route.name, master_route_path(@master, route) %></td>
+        <td></td>
+        <td><%= route.route_code %></td>
+        <td><%= route.persistentid %></td>
+        <td><%= route.version %></td>
+      </tr>
+      <% for journey in route.journeys do %>
+          <tr>
+            <td></td>
+            <td><%= link_to journey.name, master_journey_path(@master, journey) %></td>
+            <td><%= journey.route_code %></td>
+            <td><%= journey.persistentid %></td>
+            <td><%= journey.version %></td>
+          </tr>
+      <% end %>
+  <% end %>
+  </tbody>
+</table>
+<h2>Journeys</h2>
+<table>
+  <thead>
+  <tr>
+    <th>Journey</th>
+    <th>Code</th>
+    <th>Persistent Id</th>
+    <th>Version</th>
+    <th>Vid</th>
+    <th>Direction</th>
+    <th>Bounds</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% for x in @master.journeys do %>
+      <tr>
+        <td><%= link_to x.name, master_journey_path(@master, x) %></td>
+        <td><%= x.route_code %></td>
+        <td><%= x.persistentid %></td>
+        <td><%= x.version %></td>
+        <td><%= x.vid %></td>
+        <td><%= x.dir %></td>
+        <td><%= x.bounds %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+<h2>Patterns</h2>
+<table>
+  <thead>
+  <tr>
+    <th>Pattern</th>
+    <th>Persistent Id</th>
+    <th>Version</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% for x in @master.patterns do %>
+      <tr>
+        <td><%= link_to x.persistentid, master_pattern_path(@master, x) %></td>
+        <td><%= x.version %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
 
-<%= link_to 'Edit', edit_master_path(@master) %> |
-<%= link_to 'Back', masters_path %>
+<%= button_to "Update", master_path(@master), :method => :patch %>
+<%= button_to "Locations", locate_master_path(@master) %>

@@ -12,51 +12,36 @@ class ApisController < ApplicationController
     set_api
   end
 
-  # GET /apis/new
-  def new
-    @api = Api.new
-  end
-
-  # GET /apis/1/edit
-  def edit
-  end
-
-  # POST /apis
-  def create
-    @api = Api.new(api_params)
-
-    if @api.save
-      redirect_to @api, notice: 'Api was successfully created.'
-    else
-      render action: 'new'
-    end
+  def login
+    set_api
+    LocationJob.new().auth(@api, "token")
   end
 
   # PATCH/PUT /apis/1
   def update
-    if @api.update(api_params)
-      redirect_to @api, notice: 'Api was successfully updated.'
+    slug = params[:slug]
+    master = Master.where(:slug => slug).first
+    if master
+      api = Api.where(:id => params[:id]).first
+      if !api.nil?
+        api.destroy
+      end
+      api = Api.new(:master => master)
+      resp = Hash.from_xml open(master.api_url)
+      api.from_hash(resp["API"])
+      api.save
+      redirect_to master_path(api.master), :notice => "API Updated"
     else
-      render action: 'edit'
+      redirect_to masters_path, :notice => "Master not found"
     end
   end
 
-  # DELETE /apis/1
-  def destroy
-    @api.destroy
-    redirect_to apis_url, notice: 'Api was successfully destroyed.'
-  end
-
-
   def refresh
-    slug = params[:slug]
-    master = Master.where(:slug => slug).first
-    resp = Hash.from_xml open(master.api_url)
-    api = Api.new(:master => master)
-    api.from_hash(resp["API"])
-    api.save
-    redirect_to api_path(api, :slug => slug)
+    api = Api.find(params[:id])
+    RefreshJob.new(api.id).doit
+    redirect_to routes_path(api)
   end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_api

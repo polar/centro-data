@@ -80,6 +80,7 @@ ActiveRecord::Schema.define(version: 20130919190512) do
     t.string   "wid1"
     t.string   "wid2"
     t.string   "time"
+    t.integer  "journey_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -103,7 +104,7 @@ ActiveRecord::Schema.define(version: 20130919190512) do
   create_table "journeys", force: true do |t|
     t.string  "persistentid"
     t.string  "route_type"
-    t.float   "dir"
+    t.string  "dir"
     t.float   "sort"
     t.string  "route_code"
     t.integer "version"
@@ -121,6 +122,8 @@ ActiveRecord::Schema.define(version: 20130919190512) do
     t.integer "api_id"
     t.integer "pattern_id"
     t.integer "master_id"
+    t.integer "route_id"
+    t.integer "centro_bus_id"
   end
 
   create_table "masters", force: true do |t|
@@ -156,6 +159,7 @@ ActiveRecord::Schema.define(version: 20130919190512) do
     t.string  "coords"
     t.integer "api_id"
     t.integer "master_id"
+    t.integer "route_id"
   end
 
   create_table "routes", force: true do |t|

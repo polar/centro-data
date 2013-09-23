@@ -12,6 +12,7 @@
   <tbody>
     <% @apis.each do |api| %>
       <tr>
+        <td><%= api.slug %></td>
         <td><%= link_to 'Show', api %></td>
         <td><%= link_to 'Edit', edit_api_path(api) %></td>
         <td><%= link_to 'Destroy', api, method: :delete, data: { confirm: 'Are you sure?' } %></td>

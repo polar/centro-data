@@ -10,50 +10,34 @@ class MastersController < ApplicationController
   # GET /masters/1
   def show
     set_master
-  end
-
-  # GET /masters/new
-  def new
-    @master = Master.new
-  end
-
-  # GET /masters/1/edit
-  def edit
-    set_master
-  end
-
-  # POST /masters
-  def create
-    @master = Master.new(master_params)
-
-    if @master.save
-      redirect_to @master, notice: 'Master was successfully created.'
+    @api = @master.api
+    if @api
+      @routes = @api.routes
+      @journeys = @api.journeys
     else
-      render action: 'new'
+      RefreshJob.new(0).refresh_master(@master)
+      redirect_to master_path(@master)
     end
   end
 
   # PATCH/PUT /masters/1
   def update
     set_master
-    if @master.update(master_params)
-      redirect_to @master, notice: 'Master was successfully updated.'
-    else
-      render action: 'edit'
-    end
+    RefreshJob.new(0).refresh_master(@master)
+    redirect_to master_path(@master)
   end
 
   def refresh
     url = "https://busme-apis.herokuapp.com/apis/d1/discover"
-    Master.destroy_all
-    resp = Hash.from_xml open(url)
-    for m in resp["masters"]["master"] do
-      m["bounds"] = m["bounds"].split(",").map {|x| x.to_f}
-      master = Master.new()
-      master.from_hash(m)
-      master.save
-    end
+    url = "http://skylight.local:3002/apis/d1/discover"
+    RefreshJob.new(0).refresh_masters(url)
     redirect_to masters_path
+  end
+
+  def locate
+    set_master
+    LocationJob.new(@master.id).doit
+    redirect_to master_path(@master)
   end
 
   # DELETE /masters/1

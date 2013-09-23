@@ -18,22 +18,26 @@ CentroData::Application.routes.draw do
     collection do
       post :refresh
     end
+    member do
+      post :locate
+    end
+    resources :routes, :controller => "masters/routes" do
+      member do
+        post :refresh
+      end
+    end
+    resources :journeys, :controller => "masters/journeys" do
+      member do
+        post :refresh
+      end
+    end
+    resources :patterns, :controller => "masters/patterns"
   end
   resources :apis do
     member do
       post :refresh
+      post :login
     end
   end
 
-  resources :routes do
-    member do
-      post :refresh
-    end
-  end
-  resources :journeys do
-    member do
-      post :refresh
-    end
-  end
-  resources :patterns
 end

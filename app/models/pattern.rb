@@ -2,6 +2,7 @@ class Pattern < ActiveRecord::Base
   serialize :coords, Array
   belongs_to :api
   belongs_to :master
+  belongs_to :route
 
   def from_hash(hash)
     hash.each_pair do |k,v|

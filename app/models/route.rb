@@ -4,6 +4,11 @@ class Route < ActiveRecord::Base
   belongs_to :master
 
   has_many :patterns
+  has_many :journeys
+
+  def needs_update?
+    patterns.empty?
+  end
 
   def bounds
     [nw_lon.to_f, nw_lat.to_f, se_lon.to_f, se_lat.to_f]
@@ -12,6 +17,8 @@ class Route < ActiveRecord::Base
   def from_hash(hash)
     hash.each_pair do |k,v|
       case k
+        when "id"
+          self.persistentid = v
         when "__content__"
         when "patternids"
           self.patternids = v.split(",")

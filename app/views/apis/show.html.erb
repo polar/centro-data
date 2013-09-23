@@ -12,6 +12,8 @@
 
 </table>
 
-<%= button_to "Refresh", refresh_api_path(0, :slug => params[:slug])  %>
+<%= button_to "Update", api_path(@api, :slug => params[:slug]), :method => :patch  %>
+<%= button_to "Collect", refresh_api_path(@api, :slug => params[:slug])  %>
 
-<%= link_to "Routes", routes_path(:api_id => @api.id) %>
+<%= link_to "Master", master_path(@api.master) if @api.master %>
+<%= button_to "Login", login_api_path(@api) if @api.master %>
