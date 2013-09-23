@@ -5,7 +5,7 @@ class CreatePatterns < ActiveRecord::Migration
       t.string :route_type
       t.integer :version
       t.float :distance
-      t.string :coords
+      t.text :coords
 
       t.references :api
       t.references :master

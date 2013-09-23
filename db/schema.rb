@@ -156,7 +156,7 @@ ActiveRecord::Schema.define(version: 20130919190512) do
     t.string  "route_type"
     t.integer "version"
     t.float   "distance"
-    t.string  "coords"
+    t.text    "coords"
     t.integer "api_id"
     t.integer "master_id"
     t.integer "route_id"

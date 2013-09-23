@@ -3,7 +3,7 @@ require 'open-uri'
 class RefreshJob < Struct.new(:queue, :period, :api_id)
 
   def enqueue(job)
-    puts "Equeued Job #{queue} #{period} #{route_codes}."
+    puts "Equeued Job #{queue} #{period} for #{Api.find(api_id).slug}."
   end
 
   def perform
