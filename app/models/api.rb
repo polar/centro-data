@@ -13,7 +13,7 @@ class Api < ActiveRecord::Base
           self.a_update= v
         when /oauth/
         when "time"
-          self.time = Time.now
+          self.time = Time.at(v.to_i)
         when "timeoffset"
           self.time_offset= v
         when "box"

@@ -8,7 +8,7 @@
     <ignored path="centro-data.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/database.yml" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379953549788" ignored="false" />
-    <file path="/Dummy.txt" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379958053458" ignored="false" />
+    <file path="/Dummy.txt" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379959559809" ignored="false" />
     <file path="/20130325202902_create_centro_buses.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379873900440" ignored="false" />
     <file path="/centro_bus.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379947366814" ignored="false" />
     <file path="/Gemfile" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379958041220" ignored="false" />
@@ -131,7 +131,7 @@
     <file path="/route.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379870714065" ignored="false" />
     <file path="/20130919183737_create_routes.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379799458287" ignored="false" />
     <file path="/20130919182618_create_patterns.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379866376059" ignored="false" />
-    <file path="/api.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379959553461" ignored="false" />
+    <file path="/api.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379960150348" ignored="false" />
     <file path="/user_login.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379617274264" ignored="false" />
     <file path="/master.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379795127096" ignored="false" />
     <file path="/masters_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379957136718" ignored="false" />
@@ -268,7 +268,7 @@
       <file leaf-file-name="api.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/api.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="40" selection-start="328" selection-end="328" vertical-scroll-proportion="0.4308797">
+            <state line="14" column="49" selection-start="271" selection-end="271" vertical-scroll-proportion="0.37701976">
               <folding />
             </state>
           </provider>
@@ -1126,7 +1126,11 @@
       <created>1379958055018</created>
       <updated>1379958055018</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="On the way to examining Busme! api.">
+      <created>1379959564220</created>
+      <updated>1379959564220</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1346,7 +1350,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/api.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="40" selection-start="328" selection-end="328" vertical-scroll-proportion="0.4308797">
+        <state line="14" column="49" selection-start="271" selection-end="271" vertical-scroll-proportion="0.37701976">
           <folding />
         </state>
       </provider>
