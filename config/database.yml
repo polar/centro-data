@@ -48,11 +48,12 @@ test:
   pool: 5
   username: centrodata
   password: eatme
-
+#        postgres://zncctddrxvvsdh:TgYLefkJ4N5OusFg7zDqSlnN1W@ec2-23-23-237-0.compute-1.amazonaws.com:5432/d8bihmv7qrc7e0
 production:
   adapter: postgresql
   encoding: unicode
-  database: centro_data_production
+  database: d8bihmv7qrc7e0
   pool: 5
-  username: centrodata
-  password: eatme
+  host: ec2-23-23-237-0.compute-1.amazonaws.com
+  username: zncctddrxvvsdh
+  password: TgYLefkJ4N5OusFg7zDqSlnN1W

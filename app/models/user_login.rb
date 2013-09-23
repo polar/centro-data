@@ -1,3 +1,3 @@
 class UserLogin < ActiveRecord::Base
-  serialize roles, Array
+  serialize :roles, Array
 end
