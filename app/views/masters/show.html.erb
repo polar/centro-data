@@ -53,7 +53,7 @@
         <td><%= x.route_code %></td>
         <td><%= x.persistentid %></td>
         <td><%= x.version %></td>
-        <td><%= (Time.parse("0:00") + x.start_offset.minutes).strftime("%H:%M") %></td>
+        <td><%= (Time.parse("0:00") + x.start_offset.minutes).strftime("%H:%M") if x.start_offset %></td>
         <td><%= x.vid %></td>
         <td><%= x.dir %></td>
       </tr>
