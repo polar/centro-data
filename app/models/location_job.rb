@@ -30,7 +30,7 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
   end
 
   def enqueue(job)
-    puts "Equeued Job #{queue} #{period} #{route_codes}."
+    puts "Equeued Job #{queue} #{period} #{Master.find(master_id).slug}."
   end
 
   def perform
