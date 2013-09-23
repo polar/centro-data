@@ -1,0 +1,37 @@
+<h1>Listing routes for <%= @api.slug %></h1>
+
+<pre>
+  <%= @resp.inspect %>
+</pre>
+
+<table>
+  <thead>
+  <tr>
+    <th>Route</th>
+    <th>Journey</th>
+    <th>Persistent Id</th>
+    <th>Version</th>
+    <th>Pattern</th>
+  </tr>
+  </thead>
+  <tbody>
+      <% for route in @master.routes do %>
+      <tr>
+        <td><%= link_to route.name, master_route_path(@master, journey) %></td>
+        <td></td>
+        <td><%= route.persistentid %></td>
+        <td><%= route.version %></td>
+      </tr>
+      <% for journey in route.journeys do %>
+          <tr>
+            <td></td>
+            <td><%= link_to journey.name, master_journey_path(@master, journey) %></td>
+            <td><%= journey.persistentid %></td>
+            <td><%= journey.version %></td>
+            <td><%= link_to journey.pattern.persistentid, master_pattern_path(@master, journey.pattern) %></td>
+          </tr>
+      <% end %>
+
+      <% end %>
+  </tbody>
+</table>

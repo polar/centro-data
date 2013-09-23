@@ -10,12 +10,23 @@ class CentroBusesController < ApplicationController
 
   end
 
+  def active
+    @master = Master.find(params[:master_id])
+    @centro_buses = CentroBus.order(:centroid).to_a
+  end
+
   def show
     @centro_bus = CentroBus.find(params[:id])
   end
 
   def new
     @centro_bus = CentroBus.new
+  end
+
+  def reset
+    @master = Master.find(params[:master_id])
+    CentroBus.destroy_all
+    redirect_to active_centro_buses_path(:master_id => @master.id)
   end
 
   def create

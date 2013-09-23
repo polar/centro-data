@@ -41,9 +41,9 @@
     <th>Code</th>
     <th>Persistent Id</th>
     <th>Version</th>
+    <th><%= Time.now.strftime("%H:%M") %></th>
     <th>Vid</th>
     <th>Direction</th>
-    <th>Bounds</th>
   </tr>
   </thead>
   <tbody>
@@ -53,9 +53,9 @@
         <td><%= x.route_code %></td>
         <td><%= x.persistentid %></td>
         <td><%= x.version %></td>
+        <td><%= (Time.parse("0:00") + x.start_offset.minutes).strftime("%H:%M") %></td>
         <td><%= x.vid %></td>
         <td><%= x.dir %></td>
-        <td><%= x.bounds %></td>
       </tr>
   <% end %>
   </tbody>
@@ -80,4 +80,5 @@
 </table>
 
 <%= button_to "Update", master_path(@master), :method => :patch %>
+<%= button_to "Reset", reset_master_path(@master) %>
 <%= button_to "Locations", locate_master_path(@master) %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Journey <%= @journey.name %></h1>
+
+<table>
+  <tr><th>Name</th><td><%= @journey.name %></td></tr>
+  <tr><th>Persistent Id</th><td><%= @journey.persistentid %></td></tr>
+  <tr><th>Version</th><td><%= @journey.version %></td></tr>
+  <tr><th>Code</th><td><%= @journey.route_code %></td></tr>
+  <tr><th>Sort</th><td><%= @journey.sort %></td></tr>
+  <tr><th>Dir</th><td><%= @journey.dir %></td></tr>
+  <tr><th>Bounds</th><td><%= @journey.bounds %></td></tr>
+  <tr><th>Timeless</th><td><%= @journey.timeless %></td></tr>
+  <tr><th>Start Offset</th><td><%= @journey.start_offset %></td></tr>
+  <tr><th>Duration</th><td><%= @journey.duration %></td></tr>
+  <tr><th>Vid</th><td><%= @journey.vid %></td></tr>
+  <tr><th>Location Refresh Rate</th><td><%= @journey.location_refresh_rate %></td></tr>
+  <tr><th>Pattern Id</th><td><%= link_to @journey.patternid, master_pattern_path(@master, @journey.pattern) if @journey.pattern %></td></tr>
+</table>

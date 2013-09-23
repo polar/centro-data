@@ -1,5 +1,6 @@
 class Delayed::JobsController < ApplicationController
   def index
+    @master = Master.find(params[:master_id])
     @jobs = Delayed::Job.all
   end
 
@@ -9,6 +10,34 @@ class Delayed::JobsController < ApplicationController
 
   def new
     @job = Delayed::Job.new
+  end
+
+  def start
+    @master = Master.find(params[:master_id])
+    which = params[:kind]
+    case which
+      when "refresh"
+        Delayed::Job.enqueue(RefreshJob.new(:refresh, 60, @master.api.id))
+      when "locate"
+        Delayed::Job.enqueue(LocateJob.new(:locate, 10, @master.api.id))
+      else
+        flash[:error] = "Kind not selected"
+    end
+    redirect_to delayed_jobs_path(:master_id => @master)
+  end
+
+  def stop
+    @master = Master.find(params[:master_id])
+    which = params[:kind]
+    case which
+      when "refresh"
+        Delayed::Job.where(:queue => "refresh").each {|x| x.destroy }
+      when "locate"
+        Delayed::Job.where(:queue => "locate").each {|x| x.destroy }
+      else
+        flash[:error] = "Kind not selected"
+    end
+    redirect_to delayed_jobs_path(:master_id => @master)
   end
 
   def create

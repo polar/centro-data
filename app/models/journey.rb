@@ -6,6 +6,8 @@ class Journey < ActiveRecord::Base
   belongs_to :master
   belongs_to :route
 
+  belongs_to :centro_bus
+
   def needs_update?
     return pattern.nil?
   end

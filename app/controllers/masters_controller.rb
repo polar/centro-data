@@ -34,10 +34,16 @@ class MastersController < ApplicationController
     redirect_to masters_path
   end
 
+  def reset
+    set_master
+    CentroBus.destroy_all
+    redirect_to master_path(@master)
+  end
+
   def locate
     set_master
     LocationJob.new(@master.id).doit
-    redirect_to master_path(@master)
+    redirect_to active_centro_buses_path(:master_id => @master.id)
   end
 
   # DELETE /masters/1

@@ -1,0 +1,24 @@
+<H1>Delayed Jobs</H1>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Payload</th>
+  </tr>
+  <% for job in @jobs %>
+      <tr>
+        <td><%= job.name %></td>
+        <td><%= job.payload_object.inspect %></td>
+      </tr>
+  <% end %>
+</table>
+
+<%= form_tag start_delayed_jobs_path(:master_id => @master.id) do  %>
+  <%= label_tag :kind, "Which One" %>
+  <%= select_tag "kind", options_for_select(["Pick One", "refresh", "locate"]) %>
+<%= submit_tag "Start" %>
+<% end %>
+<%= form_tag stop_delayed_jobs_path(:master_id => @master.id) do  %>
+    <%= label_tag :kind, "Which One" %>
+    <%= select_tag "kind", options_for_select(["Pick One", "refresh", "locate"]) %>
+    <%= submit_tag "Stop" %>
+<% end %>

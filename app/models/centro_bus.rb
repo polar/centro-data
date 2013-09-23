@@ -11,9 +11,9 @@ class CentroBus < ActiveRecord::Base
 
   def self.make(time, hash)
     hash["centroid"] = hash["id"]
-    hash["id"] = nil
+    hash.delete("id")
     hash["time"] = time
-    cb = CentroBus.where(:centroid => hash["id"]).first
+    cb = CentroBus.where(:centroid => hash["centroid"]).first
     if cb.nil?
       cb = CentroBus.create(hash)
     else

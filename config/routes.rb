@@ -6,13 +6,20 @@ CentroData::Application.routes.draw do
     end
   end
 
-  resources :jobs do
-    collection do
-      post :start
-      post :stop
+  namespace :delayed do
+    resources :jobs do
+      collection do
+        post :start
+        post :stop
+      end
     end
   end
-  resources :centro_buses
+  resources :centro_buses do
+    collection do
+      get :active
+      post :reset
+    end
+  end
 
   resources :masters do
     collection do
@@ -20,6 +27,7 @@ CentroData::Application.routes.draw do
     end
     member do
       post :locate
+      post :reset
     end
     resources :routes, :controller => "masters/routes" do
       member do

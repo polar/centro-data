@@ -34,6 +34,7 @@ class LocationJob < Struct.new(:master_id)
   end
 
   def perform
+    doit
   ensure
     Delayed::Job.enqueue(self, :queue => queue, :run_at => Time.now + period.seconds)
   end
@@ -64,6 +65,7 @@ class LocationJob < Struct.new(:master_id)
     resp  = Hash.from_xml open("http://bus-time.centro.org/bustime/map/getBusesForRoute.jsp?route=#{route_code}&nsd=true&key=0.30387086560949683")
     # puts "got resp #{resp.inspect}"
     buses = resp["buses"]
+    centro_buses = []
     if !buses["bus"].nil?
       if buses["bus"].is_a? Array
         puts "Got #{buses["bus"].count} bus locations for the #{route_code}."
@@ -103,7 +105,7 @@ class LocationJob < Struct.new(:master_id)
     if centro_bus.journey.nil?
       if true
         centro_bus_results = []
-        journeys = Journey.where(:master_id => master.id, :route_code => centro_bus.rt).all
+        journeys = Journey.where(:master_id => master.id, :route_code => centro_bus.rt, :centro_bus_id => nil).all
         journeys.each do |journey|
           if centro_direction_match?(centro_bus, journey)
             average_speed = journey.average_speed
@@ -117,14 +119,24 @@ class LocationJob < Struct.new(:master_id)
       if centro_bus_results.size == 1
         puts "Found one journey for CentroBus #{centro_bus.centroid}"
         centro_bus.journey = centro_bus_results.first[:journey]
+        centro_bus.save
+        centro_bus.journey.centro_bus = centro_bus
+        centro_bus.journey.save
       else
         puts "Have #{centro_bus.journeys.size} journeys for CentroBus #{centro_bus.centroid}"
         # Sort by closest to time now. Might not be totally correct.
         res = centro_bus_results.sort {|x,y|
           order_results(time_now, base_time, x, y)
         }
-        if res.first
-          centro_bus.journey = res.first[:journey]
+        for r in res do
+          # We don't want busses that haven't started yet.
+          if r[:time_diff] > 0
+            centro_bus.journey =  r[:journey]
+            centro_bus.save
+            journey.centro_bus = centro_bus
+            journey.save
+            break
+          end
         end
       end
     end
