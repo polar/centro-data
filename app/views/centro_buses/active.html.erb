@@ -4,8 +4,7 @@
     <th>Centroid</th>
     <th>Rtdd</th>
     <th>Dd</th>
-    <th>Lat</th>
-    <th>Lon</th>
+    <th>Lat Lon</th>
     <th>Pid</th>
     <th>Run</th>
     <th>Time</th>
@@ -16,8 +15,7 @@
         <td><%= link_to centro_bus.centroid, centro_bus_path(centro_bus) %></td>
         <td><%= centro_bus.rtdd %></td>
         <td><%= centro_bus.dd %></td>
-        <td><%= centro_bus.lat %></td>
-        <td><%= centro_bus.lon %></td>
+        <td><%= centro_bus.lat%>, <%= centro_bus.lon %></td>
         <td><%= centro_bus.pid %></td>
         <td><%= centro_bus.run %></td>
         <td><%= centro_bus.time %></td>

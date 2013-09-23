@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abc7cc8c-b95d-468d-8a48-7c6a76d34971" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/location_boxing.rb" afterPath="$PROJECT_DIR$/app/models/location_boxing.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/centro_buses/active.html.erb" afterPath="$PROJECT_DIR$/app/views/centro_buses/active.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="centro-data.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/database.yml" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379953549788" ignored="false" />
-    <file path="/Dummy.txt" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379969587594" ignored="false" />
+    <file path="/Dummy.txt" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379970965290" ignored="false" />
     <file path="/20130325202902_create_centro_buses.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379967133354" ignored="false" />
     <file path="/centro_bus.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379947366814" ignored="false" />
     <file path="/Gemfile" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379958041220" ignored="false" />
@@ -163,7 +163,7 @@
     <file path="/location_job.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379967738039" ignored="false" />
     <file path="/location_boxing.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379970947727" ignored="false" />
     <file path="/Ruby Console" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379903090470" ignored="false" />
-    <file path="/active.html.erb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379967198855" ignored="false" />
+    <file path="/active.html.erb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379971673584" ignored="false" />
     <file path="/README.rdoc" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379957950675" ignored="false" />
     <file path="$PROJECT_DIR$/../buspass-web/config/environments/production.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379966687013" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -212,10 +212,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="active.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="active.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/centro_buses/active.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="34" selection-start="999" selection-end="999" vertical-scroll-proportion="-13.75">
+            <state line="9" column="39" selection-start="200" selection-end="200" vertical-scroll-proportion="0.29605263">
               <folding />
             </state>
           </provider>
@@ -239,15 +239,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="refresh_job.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/refresh_job.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="51" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="jobs_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/delayed/jobs_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -257,10 +248,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="location_boxing.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="location_boxing.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/location_boxing.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="857" column="57" selection-start="26301" selection-end="26301" vertical-scroll-proportion="0.48125">
+            <state line="857" column="57" selection-start="26301" selection-end="26301" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="centro_bus.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/centro_bus.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -311,10 +311,10 @@
         <option value="$PROJECT_DIR$/app/models/refresh_job.rb" />
         <option value="$PROJECT_DIR$/app/controllers/delayed/jobs_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130325202902_create_centro_buses.rb" />
-        <option value="$PROJECT_DIR$/app/views/centro_buses/active.html.erb" />
         <option value="$PROJECT_DIR$/app/views/masters/show.html.erb" />
         <option value="$PROJECT_DIR$/app/models/location_job.rb" />
         <option value="$PROJECT_DIR$/app/models/location_boxing.rb" />
+        <option value="$PROJECT_DIR$/app/views/centro_buses/active.html.erb" />
       </list>
     </option>
   </component>
@@ -481,6 +481,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="masters" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="centro-data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="centro-data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="centro_buses" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1201,7 +1223,11 @@
       <created>1379969591270</created>
       <updated>1379969591270</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="On the way to examining Busme! api.">
+      <created>1379970969521</created>
+      <updated>1379970969521</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1314,13 +1340,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130919185031_create_apis.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130919183737_create_routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1391,13 +1410,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/centro_buses/active.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="34" selection-start="999" selection-end="999" vertical-scroll-proportion="-13.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130325202902_create_centro_buses.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="26" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0">
@@ -1421,7 +1433,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/location_boxing.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="857" column="57" selection-start="26301" selection-end="26301" vertical-scroll-proportion="0.48125">
+        <state line="857" column="57" selection-start="26301" selection-end="26301" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/centro_bus.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/centro_buses/active.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="39" selection-start="200" selection-end="200" vertical-scroll-proportion="0.29605263">
           <folding />
         </state>
       </provider>
