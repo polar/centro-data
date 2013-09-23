@@ -83,6 +83,9 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
       when "344"
         centro_bus.dd == "TO CAMPUS" && journey.dir == "MainCampus" ||
             centro_bus.dd == "FROM CAMPUS" && journey.dir == "SouthCampus"
+      when "44"
+        centro_bus.dd == "TO CAMPUS" && journey.dir == "MainCampus" ||
+            centro_bus.dd == "FROM CAMPUS" && journey.dir == "SouthCampus"
       else
         false
     end
