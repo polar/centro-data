@@ -21,6 +21,7 @@ class CreateCentroBuses < ActiveRecord::Migration
       t.string    :time
 
       t.references :journey
+      t.text      :message
       t.timestamps
     end
   end

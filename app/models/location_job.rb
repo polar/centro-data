@@ -124,6 +124,7 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
         centro_bus.journey.save
       else
         puts "Have #{centro_bus.journeys.size} journeys for CentroBus #{centro_bus.centroid}"
+        centro_bus.message = "Have #{centro_bus.journeys.size} journeys. "
         # Sort by closest to time now. Might not be totally correct.
         res = centro_bus_results.sort {|x,y|
           order_results(time_now, base_time, x, y)
@@ -143,6 +144,16 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
 
     if centro_bus.journey
       report_journey_location(centro_bus)
+    else
+      for r in res do
+        journey = r[:journey]
+        time = (Time.parse("0:00") + journey.start_offset.minutes).strftime("%H:%M")
+        dist = r[:distance] % "%-8.2d"
+        diff = r[:time_diff] % "%-8.2d"
+        msg = "[#{time} #{dist} #{diff}] "
+        centro_bus.message += msg
+      end
+      centro_bus.save
     end
   end
 
