@@ -8,7 +8,7 @@ class Message < ActiveRecord::Base
         when "id"
           self.persistentid= v
         when "expiryTime"
-          self.expiry_time = Time.new(v.to_i)
+          self.expiry_time = Time.at(v.to_i)
 
         else
           self.send("#{k.underscore}=", v)
