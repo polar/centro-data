@@ -112,7 +112,7 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
         journeys.each do |journey|
           if centro_direction_match?(centro_bus, journey)
             average_speed = journey.average_speed
-            results = getPossible(journey.pattern.coords, [centro_bus.lon, centro_bus.lat], 60, average_speed)
+            results = getPossible(journey.pattern.coords, [centro_bus.lon, centro_bus.lat], 120, average_speed)
             if results && results.size > 0
               centro_bus_results << {:journey => journey, :res => results}
             end
