@@ -837,7 +837,8 @@ module LocationBoxing
     }
   end
 
-  def getPossible(vps, coord, buffer, average_speed)
+  def getPossible(orig_path, coord, buffer, average_speed)
+    vps = orig_path
     vp1 = vps[0]
     vps = vps.drop(1)
     path = [vp1]
@@ -852,8 +853,10 @@ module LocationBoxing
       if (onLine(vp1, vp2, buffer, coord))
         dist = getPathDistance(path+[coord])
         if dist > distance
-          ans = getDirectionAndPointOnPath(vps,dist,average_speed)
+          ans = getDirectionAndPointOnPath(orig_path, dist, average_speed)
           if points.size > 0
+            # We don't want to be collecting points that are too close to each other.
+            # Only include if far enough away from the last answer
             if 2*buffer < getPathDistance([points.last[:coord], ans[:coord]])
               points += [ans]
             end
