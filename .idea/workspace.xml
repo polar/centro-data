@@ -8,7 +8,7 @@
     <ignored path="centro-data.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/database.yml" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379953549788" ignored="false" />
-    <file path="/Dummy.txt" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379962103084" ignored="false" />
+    <file path="/Dummy.txt" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379963862904" ignored="false" />
     <file path="/20130325202902_create_centro_buses.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379873900440" ignored="false" />
     <file path="/centro_bus.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379947366814" ignored="false" />
     <file path="/Gemfile" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379958041220" ignored="false" />
@@ -79,7 +79,7 @@
     <file path="$PROJECT_DIR$/../busme.swifty/swiftiply.yaml" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1368200392339" ignored="false" />
     <file path="/swiftiply.yaml" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1368200392339" ignored="false" />
     <file path="/swiftiplyctl" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1368194770261" ignored="false" />
-    <file path="/a.dummy" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379960198002" ignored="false" />
+    <file path="/a.dummy" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379962831134" ignored="false" />
     <file path="$PROJECT_DIR$/../busme.swifty/Gemfile" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1368206608051" ignored="false" />
     <file path="/rogue.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1368217510619" ignored="false" />
     <file path="$PROJECT_DIR$/../busme.swifty/aa_creds.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1368201660289" ignored="false" />
@@ -160,7 +160,7 @@
     <file path="/20130919185321_create_messages.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379794930887" ignored="false" />
     <file path="/20130919190044_create_user_logins.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379951285834" ignored="false" />
     <file path="/refresh_job.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379960635188" ignored="false" />
-    <file path="/location_job.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379962433388" ignored="false" />
+    <file path="/location_job.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379966393738" ignored="false" />
     <file path="/location_boxing.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379894339848" ignored="false" />
     <file path="/Ruby Console" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379903090470" ignored="false" />
     <file path="/active.html.erb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379947520664" ignored="false" />
@@ -184,24 +184,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="20130919183737_create_routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20130919183737_create_routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20130919182618_create_patterns.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20130919182618_create_patterns.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="12" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="20130919182212_create_journeys.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20130919182212_create_journeys.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -214,7 +196,25 @@
       <file leaf-file-name="location_job.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/location_job.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="32" selection-start="4596" selection-end="4596" vertical-scroll-proportion="0.7248908">
+            <state line="215" column="42" selection-start="6308" selection-end="6308" vertical-scroll-proportion="0.8689956">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="centro_buses_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/centro_buses_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/centro_buses/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="20.125">
               <folding />
             </state>
           </provider>
@@ -1158,7 +1158,11 @@
       <created>1379962107967</created>
       <updated>1379962107967</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="On the way to examining Busme! api.">
+      <created>1379962471088</created>
+      <updated>1379962471088</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1271,20 +1275,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/apis_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/api.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="49" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/message.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="20" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
@@ -1376,9 +1366,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/centro_buses_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/centro_buses/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="20.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/location_job.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="32" selection-start="4596" selection-end="4596" vertical-scroll-proportion="0.7248908">
+        <state line="215" column="42" selection-start="6308" selection-end="6308" vertical-scroll-proportion="0.8689956">
           <folding />
         </state>
       </provider>
