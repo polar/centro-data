@@ -82,4 +82,4 @@
 <%= button_to "Update", master_path(@master), :method => :patch %>
 <%= button_to "Reset", reset_master_path(@master) %>
 <%= button_to "Locations", locate_master_path(@master) %>
-<%= link_to "Active Buses", active_centro_bus_path(:master_id => @master.id) %>
+<%= link_to "Active Buses", active_centro_buses_path(:master_id => @master.id) %>
