@@ -19,7 +19,7 @@ class Delayed::JobsController < ApplicationController
       when "refresh"
         Delayed::Job.enqueue(RefreshJob.new(:refresh, 60, @master.api.id))
       when "locate"
-        Delayed::Job.enqueue(LocationJob.new(:locate, 10, @master.api.id))
+        Delayed::Job.enqueue(LocationJob.new(:locate, 10, @master.id))
       else
         flash[:error] = "Kind not selected"
     end

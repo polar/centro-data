@@ -1,7 +1,7 @@
 require 'open-uri'
 require "net/http"
 
-class LocationJob < Struct.new(:master_id)
+class LocationJob < Struct.new(:queue, :period, :master_id)
   include LocationBoxing
 
   attr_accessor :http_client, :session_cookies
