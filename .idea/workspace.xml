@@ -8,7 +8,7 @@
     <ignored path="centro-data.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/database.yml" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379953549788" ignored="false" />
-    <file path="/Dummy.txt" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379976494721" ignored="false" />
+    <file path="/Dummy.txt" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380044973178" ignored="false" />
     <file path="/20130325202902_create_centro_buses.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379967133354" ignored="false" />
     <file path="/centro_bus.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379947366814" ignored="false" />
     <file path="/Gemfile" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379958041220" ignored="false" />
@@ -65,7 +65,7 @@
     <file path="$PROJECT_DIR$/../buspass.web/app/models/apis/discovery1.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364757805728" ignored="false" />
     <file path="/discovery1.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364755812969" ignored="false" />
     <file path="$PROJECT_DIR$/../buspass.web/app/models/apis/v1.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364841984455" ignored="false" />
-    <file path="/v1.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379891874481" ignored="false" />
+    <file path="/v1.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380045646229" ignored="false" />
     <file path="$PROJECT_DIR$/../buspass.web/app/helpers/activements_helper.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1368190425908" ignored="false" />
     <file path="/activements_helper.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1368190421792" ignored="false" />
     <file path="$PROJECT_DIR$/../buspass.web/app/helpers/delayed_jobs_helper.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1368190444080" ignored="false" />
@@ -138,7 +138,7 @@
     <file path="/apis_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379876075371" ignored="false" />
     <file path="/20130919185031_create_apis.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379793092069" ignored="false" />
     <file path="/message.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379960206128" ignored="false" />
-    <file path="$PROJECT_DIR$/../buspass-web/app/models/apis/v1.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379898523358" ignored="false" />
+    <file path="$PROJECT_DIR$/../buspass-web/app/models/apis/v1.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380045649619" ignored="false" />
     <file path="/routes_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379866914748" ignored="false" />
     <file path="$PROJECT_DIR$/../communityengine/config/initializers/mce_options.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379704835490" ignored="false" />
     <file path="/mce_options.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379704701471" ignored="false" />
@@ -160,14 +160,21 @@
     <file path="/20130919185321_create_messages.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379794930887" ignored="false" />
     <file path="/20130919190044_create_user_logins.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379951285834" ignored="false" />
     <file path="/refresh_job.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379960635188" ignored="false" />
-    <file path="/location_job.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379967738039" ignored="false" />
-    <file path="/location_boxing.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379970947727" ignored="false" />
+    <file path="/location_job.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380046325576" ignored="false" />
+    <file path="/location_boxing.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380044580791" ignored="false" />
     <file path="/Ruby Console" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379903090470" ignored="false" />
     <file path="/active.html.erb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379971673584" ignored="false" />
     <file path="/README.rdoc" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379957950675" ignored="false" />
     <file path="$PROJECT_DIR$/../buspass-web/config/environments/production.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379966687013" ignored="false" />
-    <file path="/vehicle_journey.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379976477974" ignored="false" />
-    <file path="$PROJECT_DIR$/../buspass-web/app/models/vehicle_journey.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379976477654" ignored="false" />
+    <file path="/vehicle_journey.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380044957413" ignored="false" />
+    <file path="$PROJECT_DIR$/../buspass-web/app/models/vehicle_journey.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380044972373" ignored="false" />
+    <file path="$PROJECT_DIR$/../plucky/spec/plucky/options_hash_spec.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380041004034" ignored="false" />
+    <file path="/options_hash_spec.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380040992819" ignored="false" />
+    <file path="$PROJECT_DIR$/../buspass-web/app/models/journey_pattern.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380044972373" ignored="false" />
+    <file path="/journey_pattern.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380044501364" ignored="false" />
+    <file path="$PROJECT_DIR$/../buspass-web/lib/location_boxing.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380044590518" ignored="false" />
+    <file path="$PROJECT_DIR$/../buspass-web/app/models/reported_journey_location.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380045668521" ignored="false" />
+    <file path="/reported_journey_location.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380045668521" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +197,7 @@
       <file leaf-file-name="location_job.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/location_job.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="114" column="95" selection-start="3703" selection-end="3703" vertical-scroll-proportion="0.375">
+            <state line="223" column="190" selection-start="6809" selection-end="6809" vertical-scroll-proportion="3.78125">
               <folding />
             </state>
           </provider>
@@ -1233,7 +1240,11 @@
       <created>1379971683316</created>
       <updated>1379971683316</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="On the way to examining Busme! api.">
+      <created>1379979898468</created>
+      <updated>1379979898468</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1453,7 +1464,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/location_job.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="95" selection-start="3703" selection-end="3703" vertical-scroll-proportion="0.375">
+        <state line="223" column="190" selection-start="6809" selection-end="6809" vertical-scroll-proportion="3.78125">
           <folding />
         </state>
       </provider>

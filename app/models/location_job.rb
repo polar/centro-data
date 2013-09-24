@@ -221,7 +221,7 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
     url = centro_bus.journey.api.post_journey_location
     dir = centro_dir_to_busme_dir(centro_bus.dn)
     speed = 60
-    data = "id=#{centro_bus.journey.persistentid}&dir=#{dir}&speed=#{speed}&lon=#{centro_bus.lon}&lat=#{centro_bus.lat}&reported_time=#{Time.now.to_i*1000}&driver=1"
+    data = "id=#{centro_bus.journey.persistentid}&dir=#{dir}&speed=#{speed}&lon=#{centro_bus.lon}&lat=#{centro_bus.lat}&reported_time=#{Time.now.to_i*1000}&driver=1&vid=#{centro_bus.centroid}"
 
     puts url
     puts data
