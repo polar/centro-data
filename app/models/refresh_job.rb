@@ -130,12 +130,14 @@ class RefreshJob < Struct.new(:queue, :period, :api_id)
   end
 
   def update_journeys(journeys)
+    ids = []
     for x in journeys do
       update_journey(x) if x.needs_update?
+      ids << x.id
     end
     # Going to get rid of journeys that are not in the list
     for x in Journey.all do
-      if ! journeys.include?(x)
+      if ! ids.include?(x.id)  ||
         if x.centro_bus
           x.centro_bus.destroy
         end
