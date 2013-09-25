@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abc7cc8c-b95d-468d-8a48-7c6a76d34971" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/refresh_job.rb" afterPath="$PROJECT_DIR$/app/models/refresh_job.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/location_job.rb" afterPath="$PROJECT_DIR$/app/models/location_job.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="centro-data.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/database.yml" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379953549788" ignored="false" />
-    <file path="/Dummy.txt" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380147547850" ignored="false" />
+    <file path="/Dummy.txt" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380148209240" ignored="false" />
     <file path="/20130325202902_create_centro_buses.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379967133354" ignored="false" />
     <file path="/centro_bus.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379947366814" ignored="false" />
     <file path="/Gemfile" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379958041220" ignored="false" />
@@ -160,7 +160,7 @@
     <file path="/20130919185321_create_messages.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379794930887" ignored="false" />
     <file path="/20130919190044_create_user_logins.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379951285834" ignored="false" />
     <file path="/refresh_job.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380147532510" ignored="false" />
-    <file path="/location_job.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380146287250" ignored="false" />
+    <file path="/location_job.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380149859985" ignored="false" />
     <file path="/location_boxing.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380142899869" ignored="false" />
     <file path="/Ruby Console" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379903090470" ignored="false" />
     <file path="/active.html.erb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379971673584" ignored="false" />
@@ -202,10 +202,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="location_job.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="location_job.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/location_job.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="123" column="47" selection-start="4193" selection-end="4193" vertical-scroll-proportion="0.0">
+            <state line="114" column="91" selection-start="3720" selection-end="3720" vertical-scroll-proportion="0.4722222">
               <folding />
             </state>
           </provider>
@@ -247,10 +247,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="refresh_job.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="refresh_job.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/refresh_job.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="139" column="29" selection-start="3253" selection-end="3253" vertical-scroll-proportion="0.5955056">
+            <state line="139" column="29" selection-start="3253" selection-end="3253" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -330,8 +330,8 @@
         <option value="$PROJECT_DIR$/app/models/location_boxing.rb" />
         <option value="$PROJECT_DIR$/app/views/centro_buses/active.html.erb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
-        <option value="$PROJECT_DIR$/app/models/location_job.rb" />
         <option value="$PROJECT_DIR$/app/models/refresh_job.rb" />
+        <option value="$PROJECT_DIR$/app/models/location_job.rb" />
       </list>
     </option>
   </component>
@@ -1334,7 +1334,11 @@
       <created>1380147551785</created>
       <updated>1380147551785</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="On the way to examining Busme! api.">
+      <created>1380148213522</created>
+      <updated>1380148213522</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1545,16 +1549,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/location_job.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/refresh_job.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="47" selection-start="4193" selection-end="4193" vertical-scroll-proportion="0.0">
+        <state line="139" column="29" selection-start="3253" selection-end="3253" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/refresh_job.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/location_job.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="29" selection-start="3253" selection-end="3253" vertical-scroll-proportion="0.5955056">
+        <state line="114" column="91" selection-start="3720" selection-end="3720" vertical-scroll-proportion="0.4722222">
           <folding />
         </state>
       </provider>
