@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abc7cc8c-b95d-468d-8a48-7c6a76d34971" name="Default" comment="">
+    <list default="true" id="abc7cc8c-b95d-468d-8a48-7c6a76d34971" name="Default" comment="On the way to examining Busme! api.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/location_job.rb" afterPath="$PROJECT_DIR$/app/models/location_job.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="centro-data.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/database.yml" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379953549788" ignored="false" />
-    <file path="/Dummy.txt" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380044973178" ignored="false" />
+    <file path="/Dummy.txt" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380126759432" ignored="false" />
     <file path="/20130325202902_create_centro_buses.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379967133354" ignored="false" />
     <file path="/centro_bus.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379947366814" ignored="false" />
     <file path="/Gemfile" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379958041220" ignored="false" />
@@ -60,7 +60,7 @@
     <file path="/normal-layout.css.scss" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364407479469" ignored="false" />
     <file path="$PROJECT_DIR$/../buspass.web/app/views/layouts/_main-layout-large.html.erb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364405609241" ignored="false" />
     <file path="$PROJECT_DIR$/../buspass.web/app/assets/javascripts/LocationMapViewController.js.erb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364750611133" ignored="false" />
-    <file path="/LocationMapViewController.js.erb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364750594814" ignored="false" />
+    <file path="/LocationMapViewController.js.erb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380048010006" ignored="false" />
     <file path="$PROJECT_DIR$/../buspass.web/public/assets/manifest.yml" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364755294251" ignored="false" />
     <file path="$PROJECT_DIR$/../buspass.web/app/models/apis/discovery1.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364757805728" ignored="false" />
     <file path="/discovery1.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364755812969" ignored="false" />
@@ -79,7 +79,7 @@
     <file path="$PROJECT_DIR$/../busme.swifty/swiftiply.yaml" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1368200392339" ignored="false" />
     <file path="/swiftiply.yaml" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1368200392339" ignored="false" />
     <file path="/swiftiplyctl" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1368194770261" ignored="false" />
-    <file path="/a.dummy" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379962831134" ignored="false" />
+    <file path="/a.dummy" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380126544437" ignored="false" />
     <file path="$PROJECT_DIR$/../busme.swifty/Gemfile" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1368206608051" ignored="false" />
     <file path="/rogue.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1368217510619" ignored="false" />
     <file path="$PROJECT_DIR$/../busme.swifty/aa_creds.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1368201660289" ignored="false" />
@@ -160,21 +160,29 @@
     <file path="/20130919185321_create_messages.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379794930887" ignored="false" />
     <file path="/20130919190044_create_user_logins.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379951285834" ignored="false" />
     <file path="/refresh_job.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379960635188" ignored="false" />
-    <file path="/location_job.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380046325576" ignored="false" />
-    <file path="/location_boxing.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380044580791" ignored="false" />
+    <file path="/location_job.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380132138819" ignored="false" />
+    <file path="/location_boxing.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380111182306" ignored="false" />
     <file path="/Ruby Console" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379903090470" ignored="false" />
     <file path="/active.html.erb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379971673584" ignored="false" />
     <file path="/README.rdoc" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379957950675" ignored="false" />
     <file path="$PROJECT_DIR$/../buspass-web/config/environments/production.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379966687013" ignored="false" />
-    <file path="/vehicle_journey.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380044957413" ignored="false" />
-    <file path="$PROJECT_DIR$/../buspass-web/app/models/vehicle_journey.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380044972373" ignored="false" />
+    <file path="/vehicle_journey.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380126516841" ignored="false" />
+    <file path="$PROJECT_DIR$/../buspass-web/app/models/vehicle_journey.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380126758564" ignored="false" />
     <file path="$PROJECT_DIR$/../plucky/spec/plucky/options_hash_spec.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380041004034" ignored="false" />
     <file path="/options_hash_spec.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380040992819" ignored="false" />
-    <file path="$PROJECT_DIR$/../buspass-web/app/models/journey_pattern.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380044972373" ignored="false" />
-    <file path="/journey_pattern.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380044501364" ignored="false" />
-    <file path="$PROJECT_DIR$/../buspass-web/lib/location_boxing.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380044590518" ignored="false" />
-    <file path="$PROJECT_DIR$/../buspass-web/app/models/reported_journey_location.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380045668521" ignored="false" />
-    <file path="/reported_journey_location.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380045668521" ignored="false" />
+    <file path="$PROJECT_DIR$/../buspass-web/app/models/journey_pattern.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380111490664" ignored="false" />
+    <file path="/journey_pattern.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380111429353" ignored="false" />
+    <file path="$PROJECT_DIR$/../buspass-web/lib/location_boxing.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380111490664" ignored="false" />
+    <file path="$PROJECT_DIR$/../buspass-web/app/models/reported_journey_location.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380053225863" ignored="false" />
+    <file path="/reported_journey_location.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380053215085" ignored="false" />
+    <file path="$PROJECT_DIR$/../buspass-web/app/models/journey_location.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380046541383" ignored="false" />
+    <file path="/journey_location.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380046540707" ignored="false" />
+    <file path="$PROJECT_DIR$/../buspass-web/app/models/active_journey.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380052241031" ignored="false" />
+    <file path="/active_journey.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380052192216" ignored="false" />
+    <file path="$PROJECT_DIR$/../buspass-web/app/controllers/activements/webmap_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380047542760" ignored="false" />
+    <file path="/webmap_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380047542760" ignored="false" />
+    <file path="$PROJECT_DIR$/../buspass-web/app/assets/javascripts/LocationMapViewController.js.erb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380048014488" ignored="false" />
+    <file path="$PROJECT_DIR$/../buspass-web/app/models/journey_pattern_timing_link.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380055184915" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +205,7 @@
       <file leaf-file-name="location_job.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/location_job.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="223" column="190" selection-start="6809" selection-end="6809" vertical-scroll-proportion="3.78125">
+            <state line="120" column="31" selection-start="4081" selection-end="4081" vertical-scroll-proportion="0.44827586">
               <folding />
             </state>
           </provider>
@@ -260,7 +268,7 @@
       <file leaf-file-name="location_boxing.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/location_boxing.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="671" column="6" selection-start="20425" selection-end="20425" vertical-scroll-proportion="0.0">
+            <state line="839" column="14" selection-start="25535" selection-end="25546" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -1244,7 +1252,11 @@
       <created>1379979898468</created>
       <updated>1379979898468</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="On the way to examining Busme! api.">
+      <created>1380046354217</created>
+      <updated>1380046354217</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1254,14 +1266,14 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32741398" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32741398" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32741398" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3436482" sideWeight="0.62597114" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3436482" sideWeight="0.672586" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40288568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37402886" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37402886" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1441,6 +1453,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/delayed/jobs_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="78" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/centro_buses/active.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="39" selection-start="200" selection-end="200" vertical-scroll-proportion="-1.875">
@@ -1450,21 +1469,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/location_boxing.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="671" column="6" selection-start="20425" selection-end="20425" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/delayed/jobs_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="78" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
+        <state line="839" column="14" selection-start="25535" selection-end="25546" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/location_job.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="223" column="190" selection-start="6809" selection-end="6809" vertical-scroll-proportion="3.78125">
+        <state line="120" column="31" selection-start="4081" selection-end="4081" vertical-scroll-proportion="0.44827586">
           <folding />
         </state>
       </provider>
