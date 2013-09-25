@@ -107,6 +107,7 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
     time_now = Time.now
     if centro_bus.journey.nil?
       if true
+        puts "Figure Locations Centro Bus #{centro_bus.centroid}...."
         centro_bus_results = []
         journeys = Journey.where(:master_id => master.id, :route_code => centro_bus.rt, :centro_bus_id => nil).all
         journeys.each do |journey|
@@ -158,6 +159,7 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
         msg = "[#{time} #{dist} #{diff}] "
         centro_bus.message += msg
       end
+      puts "Did not report on Centro Bus #{centro_bus.centroid} #{centro_bus.message}"
       centro_bus.save
     end
   end
