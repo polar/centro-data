@@ -117,7 +117,7 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
               centro_bus_results << {:journey => journey, :res => results}
             end
             puts "ActiveJourney.find_by_persistentid(:active, '#{journey.persistentid}').journey_pattern.get_possible(#{[centro_bus.lon, centro_bus.lat]}, 60)"
-            puts "got #{results.size}results #{results}"
+            puts "got #{results.size} results #{results}"
           end
         end
       end

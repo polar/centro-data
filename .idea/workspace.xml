@@ -8,7 +8,7 @@
     <ignored path="centro-data.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/database.yml" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379953549788" ignored="false" />
-    <file path="/Dummy.txt" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380132178069" ignored="false" />
+    <file path="/Dummy.txt" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380132274030" ignored="false" />
     <file path="/20130325202902_create_centro_buses.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379967133354" ignored="false" />
     <file path="/centro_bus.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379947366814" ignored="false" />
     <file path="/Gemfile" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379958041220" ignored="false" />
@@ -205,7 +205,7 @@
       <file leaf-file-name="location_job.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/location_job.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="111" column="94" selection-start="3499" selection-end="3499" vertical-scroll-proportion="0.18965517">
+            <state line="119" column="38" selection-start="4052" selection-end="4052" vertical-scroll-proportion="0.50574714">
               <folding />
             </state>
           </provider>
@@ -1264,7 +1264,11 @@
       <created>1380132207443</created>
       <updated>1380132207443</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="On the way to examining Busme! api.">
+      <created>1380132277806</created>
+      <updated>1380132277806</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1484,7 +1488,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/location_job.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="94" selection-start="3499" selection-end="3499" vertical-scroll-proportion="0.18965517">
+        <state line="119" column="38" selection-start="4052" selection-end="4052" vertical-scroll-proportion="0.50574714">
           <folding />
         </state>
       </provider>
