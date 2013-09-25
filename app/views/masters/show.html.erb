@@ -56,6 +56,7 @@
         <td><%= (Time.parse("0:00") + x.start_offset.minutes).strftime("%H:%M") if x.start_offset %></td>
         <td><%= x.vid %></td>
         <td><%= x.dir %></td>
+        <td><%= x.centro_bus.centroid if x.centro_bus %></td>
       </tr>
   <% end %>
   </tbody>
