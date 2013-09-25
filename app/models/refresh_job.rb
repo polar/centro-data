@@ -137,7 +137,7 @@ class RefreshJob < Struct.new(:queue, :period, :api_id)
     end
     # Going to get rid of journeys that are not in the list
     for x in Journey.all do
-      if ! ids.include?(x.id)  ||
+      if ! ids.include?(x.id)
         if x.centro_bus
           x.centro_bus.destroy
         end
