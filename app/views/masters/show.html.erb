@@ -57,6 +57,7 @@
         <td><%= x.vid %></td>
         <td><%= x.dir %></td>
         <td><%= x.centro_bus.centroid if x.centro_bus %></td>
+        <td><%= x.centro_bus.direction if x.centro_bus %></td>
       </tr>
   <% end %>
   </tbody>
