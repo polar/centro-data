@@ -80,6 +80,18 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
 
   def centro_direction_match?(centro_bus, journey)
     case journey.route_code
+      when "45"
+        centro_bus.dd == "FROM CAMPUS" && journey.dir == "ToCampus" ||
+            centro_bus.dd == "TO CAMPUS" && journey.dir == "Destiny"
+      when "443"
+        centro_bus.dd == "FROM WAREHOUSE" && journey.dir == "ToCampus" ||
+            centro_bus.dd == "TO WAREHOUSE" && journey.dir == "Warehouse"
+      when "144"
+        centro_bus.dd == "TO CAMPUS" && journey.dir == "MainCampus" ||
+            centro_bus.dd == "FROM CAMPUS" && journey.dir == "SouthCampus"
+      when "244"
+        centro_bus.dd == "TO CAMPUS" && journey.dir == "MainCampus" ||
+            centro_bus.dd == "FROM CAMPUS" && journey.dir == "SouthCampus"
       when "344"
         centro_bus.dd == "TO CAMPUS" && journey.dir == "MainCampus" ||
             centro_bus.dd == "FROM CAMPUS" && journey.dir == "SouthCampus"
