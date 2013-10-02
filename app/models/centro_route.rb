@@ -66,7 +66,7 @@ class CentroRoute
 
 
   def self.url(route_code)
-    "http://bus-time.centro.org/bustime/map/getBusesForRoute.jsp?route=#{route_code}&key=0.9038479823691"
+    "http://bus-time.centro.org/bustime/map/getRoutePoints.jsp?route=#{route_code}&key=0.9038479823691"
   end
 
   def self.retrieve(route_code)
