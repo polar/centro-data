@@ -3,13 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="abc7cc8c-b95d-468d-8a48-7c6a76d34971" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/masters_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/masters_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/refresh_job.rb" afterPath="$PROJECT_DIR$/app/models/refresh_job.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="centro-data.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/database.yml" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379953549788" ignored="false" />
-    <file path="/Dummy.txt" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380754780849" ignored="false" />
+    <file path="/Dummy.txt" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380755597584" ignored="false" />
     <file path="/20130325202902_create_centro_buses.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379967133354" ignored="false" />
     <file path="/centro_bus.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379947366814" ignored="false" />
     <file path="/Gemfile" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379958041220" ignored="false" />
@@ -135,7 +134,7 @@
     <file path="/api.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379960150348" ignored="false" />
     <file path="/user_login.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379617274264" ignored="false" />
     <file path="/master.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379795127096" ignored="false" />
-    <file path="/masters_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380755592138" ignored="false" />
+    <file path="/masters_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380755685916" ignored="false" />
     <file path="/apis_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379876075371" ignored="false" />
     <file path="/20130919185031_create_apis.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379793092069" ignored="false" />
     <file path="/message.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379960206128" ignored="false" />
@@ -230,7 +229,7 @@
       <file leaf-file-name="masters_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/masters_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="54" selection-start="487" selection-end="487" vertical-scroll-proportion="0.5720339">
+            <state line="26" column="35" selection-start="487" selection-end="487" vertical-scroll-proportion="0.5720339">
               <folding />
             </state>
           </provider>
@@ -1580,7 +1579,11 @@
       <created>1380754783051</created>
       <updated>1380754783051</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="On the way to examining Busme! api.">
+      <created>1380755601302</created>
+      <updated>1380755601302</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1798,7 +1801,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/masters_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="54" selection-start="487" selection-end="487" vertical-scroll-proportion="0.5720339">
+        <state line="26" column="35" selection-start="487" selection-end="487" vertical-scroll-proportion="0.5720339">
           <folding />
         </state>
       </provider>
