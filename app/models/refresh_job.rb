@@ -90,8 +90,8 @@ class RefreshJob < Struct.new(:queue, :period, :api_id, :op)
     Route.where(:master_id => api.master.id).destroy_all
     Journey.where(:master_id => api.master.id).destroy_all
     Pattern.where(:master_id => api.master.id).destroy_all
-    Delayed::Job.enqueue(RefreshJob.new(:refresh, 60, api.id, "refresh"))
-    Delayed::Job.enqueue(LocationJob.new(:locate, 10, api.master.id))
+    Delayed::Job.enqueue(RefreshJob.new(:refresh, 60, api.id, "refresh"), :queue => "refresh")
+    Delayed::Job.enqueue(LocationJob.new(:locate, 10, api.master.id), :queue => "locate")
   end
 
   def refresh(api)
