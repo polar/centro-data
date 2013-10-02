@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abc7cc8c-b95d-468d-8a48-7c6a76d34971" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/masters_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/masters_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/refresh_job.rb" afterPath="$PROJECT_DIR$/app/models/refresh_job.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="centro-data.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/database.yml" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379953549788" ignored="false" />
-    <file path="/Dummy.txt" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380757615658" ignored="false" />
+    <file path="/Dummy.txt" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380757739459" ignored="false" />
     <file path="/20130325202902_create_centro_buses.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379967133354" ignored="false" />
     <file path="/centro_bus.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379947366814" ignored="false" />
     <file path="/Gemfile" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379958041220" ignored="false" />
@@ -227,10 +225,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="masters_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="masters_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/masters_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="66" selection-start="1153" selection-end="1153" vertical-scroll-proportion="0.0">
+            <state line="46" column="54" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.5769231">
               <folding />
             </state>
           </provider>
@@ -299,10 +297,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="refresh_job.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="refresh_job.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/refresh_job.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="49" selection-start="1620" selection-end="1620" vertical-scroll-proportion="0.30364373">
+            <state line="46" column="39" selection-start="1026" selection-end="1026" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -1600,7 +1598,11 @@
       <created>1380757619279</created>
       <updated>1380757619279</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="On the way to examining Busme! api.">
+      <created>1380757743811</created>
+      <updated>1380757743811</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1811,16 +1813,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/masters_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/refresh_job.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="66" selection-start="1153" selection-end="1153" vertical-scroll-proportion="0.0">
+        <state line="46" column="39" selection-start="1026" selection-end="1026" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/refresh_job.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/masters_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="49" selection-start="1620" selection-end="1620" vertical-scroll-proportion="0.30364373">
+        <state line="46" column="54" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.5769231">
           <folding />
         </state>
       </provider>
