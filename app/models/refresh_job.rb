@@ -1,6 +1,6 @@
 require 'open-uri'
 
-class RefreshJob < Struct.new(:queue, :period, :api_id)
+class RefreshJob < Struct.new(:queue, :period, :api_id, :op)
 
   def enqueue(job)
     puts "Equeued Job #{queue} #{period} for #{Api.find(api_id).slug}."
@@ -12,12 +12,18 @@ class RefreshJob < Struct.new(:queue, :period, :api_id)
     puts "Error #{boom}"
     p boom.backtrace
   ensure
-    Delayed::Job.enqueue(self, :queue => queue, :run_at => Time.now + period.seconds)
+    Delayed::Job.enqueue(self, :queue => queue, :run_at => Time.now + period.seconds) if period > 0
   end
 
   def doit
     api = Api.find(api_id)
-    refresh(api)
+    case op
+      when "reset"
+        reset(api)
+      when "refresh"
+        refresh(api)
+      else
+    end
   rescue Exception => boom
     puts "Error #{boom}"
     p boom.backtrace
@@ -71,10 +77,21 @@ class RefreshJob < Struct.new(:queue, :period, :api_id)
   end
 
   def reset(api)
+    Delayed::Job.where(:queue => "refresh").each do |x|
+      if x.payload_object.api_id == api.id
+        x.destroy
+      end
+    end
+    Delayed::Job.where(:queue => "locate").each do |x|
+      if x.payload_object.api_id == api.id
+        x.destroy
+      end
+    end
     Route.where(:master_id => api.master.id).destroy_all
     Journey.where(:master_id => api.master.id).destroy_all
     Pattern.where(:master_id => api.master.id).destroy_all
-    refresh(api)
+    Delayed::Job.enqueue(RefreshJob.new(:refresh, 60, api.id, "refresh"))
+    Delayed::Job.enqueue(LocationJob.new(:locate, 10, api.master.id))
   end
 
   def refresh(api)

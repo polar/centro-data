@@ -23,9 +23,7 @@ class MastersController < ApplicationController
   # PATCH/PUT /masters/1
   def update
     set_master
-    rj = RefreshJob.new(0)
-    rj.reset(@master.api)
-    rj.refresh_master(@master)
+    Delayed::Job.enqueue(RefreshJob.new("reset", 0, @master.api.id, :reset))
     redirect_to master_path(@master)
   end
 
