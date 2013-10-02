@@ -47,14 +47,14 @@
   </tr>
   </thead>
   <tbody>
-  <% for x in @master.journeys.sort {|x,y| x.start_offset <=> y.start_offset} do %>
+  <% for x in @master.journeys.sort {|x,y| x.start_offset && y.start_offset ? x.start_offset <=> y.start_offset : 0} do %>
       <tr>
         <td><%= link_to x.name, master_journey_path(@master, x) %></td>
         <td><%= x.route_code %></td>
         <td><%= x.persistentid %></td>
         <td><%= x.version %></td>
         <td><%= (Time.zone.parse("0:00") + x.start_offset.minutes).strftime("%H:%M") if x.start_offset %></td>
-        <td><%= (Time.zone.parse("0:00") + x.start_offset.minutes + x.duration).strftime("%H:%M") if x.start_offset %></td>
+        <td><%= (Time.zone.parse("0:00") + x.start_offset.minutes + x.duration.minutes).strftime("%H:%M") if x.start_offset %></td>
         <td><%= x.vid %></td>
         <td><%= x.dir %></td>
         <td><%= x.centro_bus.centroid if x.centro_bus %></td>
