@@ -70,6 +70,13 @@ class RefreshJob < Struct.new(:queue, :period, :api_id)
     return api
   end
 
+  def reset(api)
+    Route.where(:master_id => api.master.id).destroy_all
+    Journey.where(:master_id => api.master.id).destroy_all
+    Pattern.where(:master_id => api.master.id).destroy_all
+    refresh(api)
+  end
+
   def refresh(api)
     resp = Hash.from_xml open(api.get_route_journey_ids1)
     js = resp["Response"]["J"]

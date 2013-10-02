@@ -23,7 +23,9 @@ class MastersController < ApplicationController
   # PATCH/PUT /masters/1
   def update
     set_master
-    RefreshJob.new(0).refresh_master(@master)
+    rj = RefreshJox.new(0)
+    rj.reset(@master.api)
+    rj.refresh_master(@master)
     redirect_to master_path(@master)
   end
 
