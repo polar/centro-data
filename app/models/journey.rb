@@ -31,7 +31,7 @@ class Journey < ActiveRecord::Base
         when "curloc"
         when "__content__"
         when "duration"
-          self.duration = v.to_f
+          self.duration = v.to_i
         else
           self.send("#{k.underscore}=", v)
       end
