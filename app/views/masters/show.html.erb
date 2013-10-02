@@ -47,7 +47,7 @@
   </tr>       Time.nmoST")
   </thead>
   <tbody>
-  <% for x in @master.journeys do %>
+  <% for x in @master.journeys.sort {|x,y| x.start_offset <=> y.start_offset} do %>
       <tr>
         <td><%= link_to x.name, master_journey_path(@master, x) %></td>
         <td><%= x.route_code %></td>
