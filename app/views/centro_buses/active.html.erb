@@ -15,7 +15,7 @@
         <td><%= link_to centro_bus.centroid, centro_bus_path(centro_bus) %></td>
         <td><%= centro_bus.rtdd %></td>
         <td><%= centro_bus.dd %></td>
-        <td><%= centro_bus.lat%>, <%= centro_bus.lon %></td>
+        <td><%= link_to "#{centro_bus.lon},#{centro_bus.lat}", "http://www.google.com/search?q=#{centro_bus.lat},#{centro_bus.lon}" %></td>
         <td><%= centro_bus.pid %></td>
         <td><%= centro_bus.run %></td>
         <td><%= centro_bus.time %></td>
