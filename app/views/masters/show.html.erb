@@ -41,10 +41,10 @@
     <th>Code</th>
     <th>Persistent Id</th>
     <th>Version</th>
-    <th><%= Time.now.strftime("%H:%M") %></th>
+    <th colspan="2"><%= Time.now.in_time_zone("America/New_York").strftime("%H:%M") %></th>
     <th>Vid</th>
     <th>Direction</th>
-  </tr>
+  </tr>       Time.nmoST")
   </thead>
   <tbody>
   <% for x in @master.journeys do %>
@@ -53,7 +53,8 @@
         <td><%= x.route_code %></td>
         <td><%= x.persistentid %></td>
         <td><%= x.version %></td>
-        <td><%= (Time.parse("0:00") + x.start_offset.minutes).strftime("%H:%M") if x.start_offset %></td>
+        <td><%= (Time.zone.parse("0:00") + x.start_offset.minutes).strftime("%H:%M") if x.start_offset %></td>
+        <td><%= (Time.zone.parse("0:00") + x.start_offset.minutes + x.duration).strftime("%H:%M") if x.start_offset %></td>
         <td><%= x.vid %></td>
         <td><%= x.dir %></td>
         <td><%= x.centro_bus.centroid if x.centro_bus %></td>
