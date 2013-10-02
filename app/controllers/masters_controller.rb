@@ -44,7 +44,7 @@ class MastersController < ApplicationController
       end
     end
     Delayed::Job.where(:queue => "locate").each do |x|
-      if x.payload_object.api_id == api.id
+      if x.payload_object.master_id == api.master.id
         x.destroy
       end
     end
