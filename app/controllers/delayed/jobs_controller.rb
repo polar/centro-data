@@ -17,7 +17,7 @@ class Delayed::JobsController < ApplicationController
     which = params[:kind]
     case which
       when "refresh"
-        Delayed::Job.enqueue(RefreshJob.new(:refresh, 60, @master.api.id), :queue => "refresh")
+        Delayed::Job.enqueue(RefreshJob.new(:refresh, 60, @master.api.id, "refresh"), :queue => "refresh")
       when "locate"
         Delayed::Job.enqueue(LocationJob.new(:locate, 10, @master.id), :queue => "locate")
       else

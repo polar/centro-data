@@ -37,7 +37,20 @@ class MastersController < ApplicationController
 
   def reset
     set_master
-    CentroBus.destroy_all
+    api = @master.api
+    Delayed::Job.where(:queue => "refresh").each do |x|
+      if x.payload_object.api_id == api.id
+        x.destroy
+      end
+    end
+    Delayed::Job.where(:queue => "locate").each do |x|
+      if x.payload_object.api_id == api.id
+        x.destroy
+      end
+    end
+    Route.where(:master_id => api.master.id).destroy_all
+    Journey.where(:master_id => api.master.id).destroy_all
+    Pattern.where(:master_id => api.master.id).destroy_all
     redirect_to master_path(@master)
   end
 

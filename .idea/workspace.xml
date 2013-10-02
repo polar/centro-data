@@ -4,20 +4,19 @@
     <list default="true" id="abc7cc8c-b95d-468d-8a48-7c6a76d34971" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/delayed/jobs_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/delayed/jobs_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/masters_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/masters_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/refresh_job.rb" afterPath="$PROJECT_DIR$/app/models/refresh_job.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="centro-data.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/database.yml" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379953549788" ignored="false" />
-    <file path="/Dummy.txt" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380756457250" ignored="false" />
+    <file path="/Dummy.txt" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380757237284" ignored="false" />
     <file path="/20130325202902_create_centro_buses.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379967133354" ignored="false" />
     <file path="/centro_bus.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379947366814" ignored="false" />
     <file path="/Gemfile" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379958041220" ignored="false" />
     <file path="/collect_job.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379862897292" ignored="false" />
     <file path="/Procfile" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379954536385" ignored="false" />
     <file path="/dependencies.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364249679312" ignored="false" />
-    <file path="/jobs_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380757232600" ignored="false" />
+    <file path="/jobs_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380757461197" ignored="false" />
     <file path="/routes.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379951928378" ignored="false" />
     <file path="/index.html.erb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379952968896" ignored="false" />
     <file path="/application.css" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364252351889" ignored="false" />
@@ -136,7 +135,7 @@
     <file path="/api.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379960150348" ignored="false" />
     <file path="/user_login.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379617274264" ignored="false" />
     <file path="/master.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379795127096" ignored="false" />
-    <file path="/masters_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380756514635" ignored="false" />
+    <file path="/masters_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380757607530" ignored="false" />
     <file path="/apis_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379876075371" ignored="false" />
     <file path="/20130919185031_create_apis.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379793092069" ignored="false" />
     <file path="/message.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379960206128" ignored="false" />
@@ -228,10 +227,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="masters_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="masters_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/masters_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="72" selection-start="570" selection-end="570" vertical-scroll-proportion="0.0">
+            <state line="43" column="56" selection-start="1001" selection-end="1001" vertical-scroll-proportion="0.48582995">
               <folding />
             </state>
           </provider>
@@ -291,10 +290,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jobs_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="jobs_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/delayed/jobs_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="88" selection-start="577" selection-end="577" vertical-scroll-proportion="0.36437246">
+            <state line="19" column="83" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -303,7 +302,7 @@
       <file leaf-file-name="refresh_job.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/refresh_job.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="49" selection-start="1821" selection-end="1821" vertical-scroll-proportion="0.0">
+            <state line="91" column="67" selection-start="1570" selection-end="2014" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -346,9 +345,9 @@
         <option value="$PROJECT_DIR$/app/views/masters/show.html.erb" />
         <option value="$PROJECT_DIR$/app/models/location_job.rb" />
         <option value="$PROJECT_DIR$/app/models/journey.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/masters_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/refresh_job.rb" />
         <option value="$PROJECT_DIR$/app/controllers/delayed/jobs_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/masters_controller.rb" />
       </list>
     </option>
   </component>
@@ -1593,7 +1592,11 @@
       <created>1380756461699</created>
       <updated>1380756461700</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="On the way to examining Busme! api.">
+      <created>1380757241926</created>
+      <updated>1380757241926</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1797,23 +1800,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/masters_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="72" selection-start="570" selection-end="570" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/refresh_job.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="49" selection-start="1821" selection-end="1821" vertical-scroll-proportion="0.0">
+        <state line="91" column="67" selection-start="1570" selection-end="2014" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/delayed/jobs_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="88" selection-start="577" selection-end="577" vertical-scroll-proportion="0.36437246">
+        <state line="19" column="83" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/masters_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="56" selection-start="1001" selection-end="1001" vertical-scroll-proportion="0.48582995">
           <folding />
         </state>
       </provider>
