@@ -30,6 +30,8 @@ class Journey < ActiveRecord::Base
           self.route_type = v
         when "curloc"
         when "__content__"
+        when "duration"
+          self.duration = v.to_f
         else
           self.send("#{k.underscore}=", v)
       end
