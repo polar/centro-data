@@ -127,7 +127,7 @@ ActiveRecord::Schema.define(version: 20131003155205) do
     t.integer "route_id"
     t.integer "centro_bus_id"
     t.string  "time_zone"
-    t.float   "distance"
+    t.float   "path_distance"
   end
 
   create_table "masters", force: true do |t|
