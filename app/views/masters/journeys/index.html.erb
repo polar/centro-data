@@ -27,7 +27,7 @@
         <td>
         <% for res in  x.centro_bus.journey_results do %>
               <div>
-                <%= "distance #{res[:p_dist]}% sched #{res[:sched_time].strftime("%H:%M")}time_diff #{"%6.2d" % res[:time_diff]/60} ti_dist #{"%6.2d" % res[:ti_dist]}".html_safe %>
+                <%= "distance #{res[:p_dist]}% sched #{res[:sched_time].strftime("%H:%M")}time_diff #{"%6.2d" % (res[:time_diff]/60)} ti_dist #{"%6.2d" % res[:ti_dist]}".html_safe %>
               </div>
         <% end if x.centro_bus %>
         </td>
