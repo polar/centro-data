@@ -35,3 +35,33 @@
   <% end %>
   </tbody>
 </table>
+<H1>Active Centro Buses</H1>
+<table class="table table-striped">
+  <tr>
+    <th>Centroid</th>
+    <th>Rtdd</th>
+    <th>Dd</th>
+    <th>Lat Lon</th>
+    <th>Pid</th>
+    <th>Run</th>
+    <th>Time</th>
+    <th>Journey</th>
+  </tr>
+  <% for centro_bus in @centro_buses %>
+      <tr>
+        <td><%= link_to centro_bus.centroid, centro_bus_path(centro_bus) %></td>
+        <td><%= centro_bus.rtdd %></td>
+        <td><%= centro_bus.dd %></td>
+        <td><%= link_to "#{centro_bus.lon},#{centro_bus.lat}", "http://www.google.com/search?q=#{centro_bus.lat},#{centro_bus.lon}" %></td>
+        <td><%= centro_bus.pid %></td>
+        <td><%= centro_bus.run %></td>
+        <td><%= centro_bus.time %></td>
+        <% if centro_bus.journey %>
+            <td><%= link_to centro_bus.journey.name, master_journey_path(@master, centro_bus.journey) %></td>
+            <td><%= (Time.parse("0:00") + centro_bus.journey.start_offset.minutes).strftime("%H:%M") %></td>
+        <% else %>
+            <td colspan="2"><%= centro_bus.message %></td>
+        <% end %>
+      </tr>
+  <% end %>
+</table>
