@@ -30,7 +30,7 @@ class MastersController < ApplicationController
   def refresh
     url = "https://busme-apis.herokuapp.com/apis/d1/discover"
     url = "http://skylight.local:3002/apis/d1/discover"
-    url = "http://busme-test.heroku.com/apis/d1/discover"
+    url = "http://busme-test.herokuapp.com/apis/d1/discover"
     RefreshJob.new(0).refresh_masters(url)
     redirect_to masters_path
   end

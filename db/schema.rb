@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130919190512) do
+ActiveRecord::Schema.define(version: 20131003114111) do
 
   create_table "apis", force: true do |t|
     t.integer  "major_version"
@@ -125,6 +125,7 @@ ActiveRecord::Schema.define(version: 20130919190512) do
     t.integer "master_id"
     t.integer "route_id"
     t.integer "centro_bus_id"
+    t.string  "time_zone"
   end
 
   create_table "masters", force: true do |t|
