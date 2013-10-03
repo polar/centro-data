@@ -6,6 +6,7 @@ class Masters::JourneysController < ApplicationController
     if @api
       @routes = @api.routes
       @journeys = @api.journeys
+      @centro_buses = CentroBus.order(:centroid).to_a
     end
   end
 
