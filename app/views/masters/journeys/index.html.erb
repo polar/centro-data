@@ -8,7 +8,8 @@
     <th colspan="2"><%= @time_now.strftime("%H:%M") %></th>
     <th>Vid</th>
     <th>Direction</th>
-    <th>Current</th>
+    <th>Cur</th>
+    <th>Dist</th>
     <th>Centro Bus</th>
   </tr>
   </thead>
@@ -21,7 +22,8 @@
         <td><%= x.end_time.strftime("%H:%M") if x.start_offset %></td>
         <td><%= x.vid %></td>
         <td><%= x.dir %></td>
-        <td><%= x.active?(Time.zone.now) ? "*" : "" %></td>
+        <td><%= x.active?(@time_now) ? "*" : "" %></td>
+        <td><%= "%6.2f%" % x.p_dist(@time_now) %></td>
         <td><%= x.centro_bus.centroid if x.centro_bus %></td>
         <td><%= x.centro_bus.dd if x.centro_bus %></td>
         <td>

@@ -21,6 +21,10 @@ class Journey < ActiveRecord::Base
     getPathDistance(pattern.coords)/duration # feet/minute
   end
 
+  def p_dist(time_now)
+    average_speed * (time_now - start_time)/60.0
+  end
+
   def start_time
     ActiveSupport::TimeZone.new(time_zone).parse("0:00") + start_offset.minutes
   end
