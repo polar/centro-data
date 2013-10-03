@@ -112,7 +112,7 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
     results = getPossible(journey.pattern.coords, [centro_bus.lon, centro_bus.lat], 120, average_speed)
     if results && results.size > 0
       results.each do |r|
-        r[:p_dist] = 100*r[:distance]/journey.distance
+        r[:p_dist] = 100*r[:distance]/journey.path_distance
         r[:sched_time] = journey.start_time + r[:ti_dist].minutes
         r[:time_diff]  = time_diff(time_now, journey, r[:ti_dist])
         r[:time_start] = journey.start_offset

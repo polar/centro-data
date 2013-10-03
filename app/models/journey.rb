@@ -40,6 +40,8 @@ class Journey < ActiveRecord::Base
           self.persistentid = v
         when "type"
           self.route_type = v
+        when "distance"
+          self.path_distance = v.to_f
         when "curloc"
         when "__content__"
         when "duration"
