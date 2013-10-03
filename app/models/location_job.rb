@@ -107,6 +107,21 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
     time_now - journey.start_time + ti_dist.minutes
   end
 
+  def getResults(time_now, journey, centro_bus)
+    average_speed = journey.average_speed
+    results = getPossible(journey.pattern.coords, [centro_bus.lon, centro_bus.lat], 120, average_speed)
+    if results && results.size > 0
+      results.each do |r|
+        r[:p_dist] = 100*r[:distance]/journey.distance
+        r[:sched_time] = journey.start_time + r[:ti_dist].minutes
+        r[:time_diff]  = time_diff(time_now, journey, r[:ti_dist])
+        r[:time_start] = journey.start_offset
+      end
+      results.sort! {|x,y| x[:time_diff] <=> y[:time_diff]}
+    end
+    results
+  end
+
   def figure_locations(centro_bus)
     time_now = Time.zone.now
     if centro_bus.journey.nil?
@@ -147,7 +162,7 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
         # Sort by closest to time now. Might not be totally correct.
         centro_bus_results.sort! {|x,y| x[:res][0][:time_diff] <=> y[:res][0][:time_diff] }
         for r in centro_bus_results do
-          # We don't want busses that haven't started yet.
+          # We don't want buses that haven't started yet.
           if r[:res][0][:time_diff] > 0
             centro_bus.journey =  r[:journey]
             centro_bus.journey_results = r[:res]
