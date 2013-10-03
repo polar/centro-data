@@ -68,7 +68,7 @@
               <% for jres in centro_bus.journey_results %>
                   <% for res in jres[:res] %>
                   <div>
-                    jny = Journey.find(jres[:journey])
+                    <% jny = Journey.find(jres[:journey]) %>
                     Start <%= jny.start_time.strftime("%H:%M") %>
                     Sched <%= res[:sched_time].in_time_zone(centro_bus.journey.time_zone).strftime("%H:%M") %>
                     Diff <%= "%6.2f" % (res[:time_diff]/60.0) %>
