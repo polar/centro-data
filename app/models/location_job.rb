@@ -168,12 +168,12 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
     else
       for r in res do
         journey = r[:journey]
-        time = (Time.parse("0:00") + journey.start_offset.minutes).strftime("%H:%M")
+        time = journey.start_time.strftime("%H:%M")
         dist = r[:distance] % "%-8.2d"  if r[:distance]
         diff = r[:time_diff] % "%-8.2d"  if r[:time_diff]
         msg = "[#{time} #{dist} #{diff}] "
         centro_bus.message += msg
-      end
+      end  if res
       puts "Did not report on Centro Bus #{centro_bus.centroid} #{centro_bus.message}"
       centro_bus.save
     end
