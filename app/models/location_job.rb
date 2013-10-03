@@ -147,11 +147,15 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
         puts "Have #{centro_bus.journeys.size} journeys for CentroBus #{centro_bus.centroid}"
         centro_bus.message = "Have #{centro_bus.journeys.size} journeys. "
         # Sort by closest to time now. Might not be totally correct.
-        centro_bus_results.each do |cbr|
-          cbr[:res].sort! {|x,y| order_results(time_now, base_time, x, y)}
+        centro_bus_results.each do |x|
+          for r in x[:res] do
+            r[:time_diff]  = time_diff(time_now, base_time, x[:journey].start_offset, r[:ti_dist])
+            r[:time_start] = x[:journey].start_offset
+          end
+          x[:res].sort! {|x,y| x[:time_diff] <=> y[:time_diff]}
         end
-        res = centro_bus_results.sort {|x,y| x[:res][0][:time_diff] <=> y[:res][0][:time_diff] }
-        for r in res do
+        centro_bus_results.sort! {|x,y| x[:res][0][:time_diff] <=> y[:res][0][:time_diff] }
+        for r in centro_bus_results do
           # We don't want busses that haven't started yet.
           if r[:res][0][:time_diff] > 0
             centro_bus.journey =  r[:journey]
@@ -167,14 +171,14 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
     if centro_bus.journey
       report_journey_location(centro_bus)
     else
-      for r in res do
+      for r in centro_bus_results do
         journey = r[:journey]
         time = journey.start_time.strftime("%H:%M")
         dist = r[:res][0][:distance] % "%-8.2d"
         diff = r[:res][0][:time_diff] % "%-8.2d"
         msg = "[#{time} #{dist} #{diff}] "
         centro_bus.message += msg
-      end  if res
+      end  if centro_bus_results
       puts "Did not report on Centro Bus #{centro_bus.centroid} #{centro_bus.message}"
       centro_bus.save
     end
