@@ -8,7 +8,7 @@
     <ignored path="centro-data.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/database.yml" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379953549788" ignored="false" />
-    <file path="/Dummy.txt" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380761757723" ignored="false" />
+    <file path="/Dummy.txt" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380762563839" ignored="false" />
     <file path="/20130325202902_create_centro_buses.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379967133354" ignored="false" />
     <file path="/centro_bus.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379947366814" ignored="false" />
     <file path="/Gemfile" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379958041220" ignored="false" />
@@ -220,7 +220,7 @@
       <file leaf-file-name="location_job.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/location_job.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="179" column="44" selection-start="6753" selection-end="6753" vertical-scroll-proportion="0.7674825">
+            <state line="176" column="27" selection-start="6524" selection-end="6524" vertical-scroll-proportion="0.6678322">
               <folding />
             </state>
           </provider>
@@ -1636,7 +1636,11 @@
       <created>1380761761579</created>
       <updated>1380761761579</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="On the way to examining Busme! api.">
+      <created>1380762567182</created>
+      <updated>1380762567182</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1856,7 +1860,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/location_job.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="179" column="44" selection-start="6753" selection-end="6753" vertical-scroll-proportion="0.7674825">
+        <state line="176" column="27" selection-start="6524" selection-end="6524" vertical-scroll-proportion="0.6678322">
           <folding />
         </state>
       </provider>

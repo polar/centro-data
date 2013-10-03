@@ -103,13 +103,6 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
     end
   end
 
-  def order_results(time_now, base_time, x, y)
-    x[:time_diff] = time_diff(time_now, base_time, x[:journey].start_offset, x[:res][0][:ti_dist])
-    x[:time_start] = x[:journey].start_offset
-    y[:time_diff] = time_diff(time_now, base_time, y[:journey].start_offset, y[:res][0][:ti_dist])
-    y[:time_start] = y[:journey].start_offset
-    x[:time_diff] <=> y[:time_diff]
-  end
   def time_diff(time_now, base_time, offset, ti_dist)
     time_now - (base_time + offset.minutes + ti_dist.minutes)
   end
