@@ -147,12 +147,13 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
         puts "Have #{centro_bus.journeys.size} journeys for CentroBus #{centro_bus.centroid}"
         centro_bus.message = "Have #{centro_bus.journeys.size} journeys. "
         # Sort by closest to time now. Might not be totally correct.
-        res = centro_bus_results.sort {|x,y|
-          order_results(time_now, base_time, x, y)
-        }
+        centro_bus_results.each do |cbr|
+          cbr[:res].sort! {|x,y| order_results(time_now, base_time, x, y)}
+        end
+        res = centro_bus_results.sort {|x,y| x[:res][0][:time_diff] <=> y[:res][0][:time_diff] }
         for r in res do
           # We don't want busses that haven't started yet.
-          if r[:time_diff] > 0
+          if r[:res][0][:time_diff] > 0
             centro_bus.journey =  r[:journey]
             centro_bus.save
             centro_bus.journey.centro_bus = centro_bus
@@ -169,8 +170,8 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
       for r in res do
         journey = r[:journey]
         time = journey.start_time.strftime("%H:%M")
-        dist = r[:distance] % "%-8.2d"  if r[:distance]
-        diff = r[:time_diff] % "%-8.2d"  if r[:time_diff]
+        dist = r[:res][0][:distance] % "%-8.2d"
+        diff = r[:res][0][:time_diff] % "%-8.2d"
         msg = "[#{time} #{dist} #{diff}] "
         centro_bus.message += msg
       end  if res
