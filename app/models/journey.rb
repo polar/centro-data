@@ -22,7 +22,7 @@ class Journey < ActiveRecord::Base
   end
 
   def start_time
-    Time.zone.parse("0:00") + start_offset.minutes
+    ActiveSupport::TimeZone.new(time_zone).parse("0:00") + start_offset.minutes
   end
 
   def end_time
