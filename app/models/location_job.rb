@@ -169,8 +169,8 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
       for r in res do
         journey = r[:journey]
         time = (Time.parse("0:00") + journey.start_offset.minutes).strftime("%H:%M")
-        dist = r[:distance] % "%-8.2d"
-        diff = r[:time_diff] % "%-8.2d"
+        dist = r[:distance] % "%-8.2d"  if r[:distance]
+        diff = r[:time_diff] % "%-8.2d"  if r[:time_diff]
         msg = "[#{time} #{dist} #{diff}] "
         centro_bus.message += msg
       end
