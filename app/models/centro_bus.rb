@@ -4,7 +4,7 @@ class CentroBus < ActiveRecord::Base
   #attr_accessible :centroid, :rt, :d, :dd, :dn, :lat, :lon, :pid, :pd, :run, :fs, :op, :dip, :bid, :wid1, :wid2, :time
 
 
-  attr_accessor :journey_results
+  serialize :journey_results
 
   has_many :journeys
   belongs_to :journey

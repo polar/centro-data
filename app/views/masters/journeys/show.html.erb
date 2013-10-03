@@ -13,6 +13,7 @@
   <tr><th>Timeless</th><td><%= @journey.timeless %></td></tr>
   <tr><th>Start Offset</th><td><%= @journey.start_offset %></td></tr>
   <tr><th>Duration</th><td><%= @journey.duration %></td></tr>
+  <tr><th>Time Zone</th><td><%= @journey.time_zone %></td></tr>
   <tr><th>Vid</th><td><%= @journey.vid %></td></tr>
   <tr><th>Location Refresh Rate</th><td><%= @journey.location_refresh_rate %></td></tr>
   <tr><th>Pattern Id</th><td><%= link_to @journey.patternid, master_pattern_path(@master, @journey.pattern) if @journey.pattern %></td></tr>

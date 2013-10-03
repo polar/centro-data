@@ -1,0 +1,36 @@
+
+<h2>Journeys</h2>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Journey</th>
+    <th>Code</th>
+    <th colspan="2"><%= Time.now.in_time_zone("America/New_York").strftime("%H:%M") %></th>
+    <th>Vid</th>
+    <th>Direction</th>
+    <th>Centro Bus</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% for x in @master.journeys.sort {|x,y| x.start_offset && y.start_offset ? x.start_offset <=> y.start_offset : 0} do %>
+      <tr>
+        <td><%= link_to x.name, master_journey_path(@master, x) %></td>
+        <td><%= x.route_code %></td>
+        <td><%= x.start_time.strftime("%H:%M") if x.start_offset %></td>
+        <td><%= x.end_time.strftime("%H:%M") if x.start_offset %></td>
+        <td><%= x.vid %></td>
+        <td><%= x.dir %></td>
+        <td><%= x.active?(Time.zone.now) ? "*" : "" %></td>
+        <td><%= x.centro_bus.centroid if x.centro_bus %></td>
+        <td><%= x.centro_bus.dd if x.centro_bus %></td>
+        <td>
+        <% for res in  x.centro_bus.journey_results %>
+              <div>
+                <%= "distance #{res[:distance]} time_diff #{res[:time_diff]} ti_dist #{res[:ti_dist]}" %>
+              </div>
+        <% end %>
+        </td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>

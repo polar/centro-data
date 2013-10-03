@@ -133,6 +133,7 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
       if centro_bus_results.size == 1
         puts "Found one journey for CentroBus #{centro_bus.centroid}"
         centro_bus.journey = centro_bus_results.first[:journey]
+        centro_bus.journey_results = [centro_bus_results.first[:res]]
         centro_bus.save
         centro_bus.journey.centro_bus = centro_bus
         centro_bus.journey.save
@@ -152,6 +153,7 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
           # We don't want busses that haven't started yet.
           if r[:res][0][:time_diff] > 0
             centro_bus.journey =  r[:journey]
+            centro_bus.journey_results = [r[:res]]
             centro_bus.save
             centro_bus.journey.centro_bus = centro_bus
             centro_bus.journey.save
@@ -164,14 +166,18 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
     if centro_bus.journey
       report_journey_location(centro_bus)
     else
-      for r in centro_bus_results do
-        journey = r[:journey]
-        time = journey.start_time.strftime("%H:%M")
-        dist = "%-8.2d" % r[:res][0][:distance]
-        diff = "%-8.2d" % r[:res][0][:time_diff]
-        msg = "[#{time} #{dist} #{diff}] "
-        centro_bus.message += msg
-      end  if centro_bus_results
+      if centro_bus_results
+        for r in centro_bus_results do
+          journey = r[:journey]
+          time = journey.start_time.strftime("%H:%M")
+          dist = "%-8.2d" % r[:res][0][:distance]
+          diff = "%-8.2d" % r[:res][0][:time_diff]
+          msg = "[#{time} #{dist} #{diff}] "
+          centro_bus.message += msg
+        end
+        centro_bus.journey_results = centro_bus_results.map {|x| x[:res] }
+      end
+
       puts "Did not report on Centro Bus #{centro_bus.centroid} #{centro_bus.message}"
       centro_bus.save
     end

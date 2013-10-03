@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131003114111) do
+ActiveRecord::Schema.define(version: 20131003131254) do
 
   create_table "apis", force: true do |t|
     t.integer  "major_version"
@@ -84,6 +84,7 @@ ActiveRecord::Schema.define(version: 20131003114111) do
     t.text     "message"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "journey_results"
   end
 
   create_table "delayed_jobs", force: true do |t|

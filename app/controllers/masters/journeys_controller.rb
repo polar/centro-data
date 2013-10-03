@@ -1,5 +1,13 @@
 class Masters::JourneysController < ApplicationController
 
+  def index
+    set_master
+    @api = @master.api
+    if @api
+      @routes = @api.routes
+      @journeys = @api.journeys
+    end
+  end
 
   # GET /journeys/1
   def show
@@ -7,9 +15,13 @@ class Masters::JourneysController < ApplicationController
   end
 
   private
+
+    def set_master
+      @master = Master.find(params[:master_id])
+    end
     # Use callbacks to share common setup or constraints between actions.
     def set_journey
-      @master = Master.find(params[:master_id])
+      set_master
       @journey = Journey.find(params[:id])
     end
 
