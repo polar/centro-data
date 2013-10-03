@@ -2,6 +2,7 @@ class Masters::JourneysController < ApplicationController
 
   def index
     set_master
+    @time_now = Time.now.in_time_zone("America/New_York")
     @api = @master.api
     if @api
       @routes = @api.routes

@@ -5,7 +5,7 @@
   <tr>
     <th>Journey</th>
     <th>Code</th>
-    <th colspan="2"><%= Time.now.in_time_zone("America/New_York").strftime("%H:%M") %></th>
+    <th colspan="2"><%= @time_now.strftime("%H:%M") %></th>
     <th>Vid</th>
     <th>Direction</th>
     <th>Current</th>
@@ -46,6 +46,7 @@
     <th>Journey</th>
     <th>Start</th>
     <th>Status</th>
+    <th><%= @time_now.strftime("%H:%M") %></th>
   </tr>
   <% for centro_bus in @centro_buses %>
       <tr>
