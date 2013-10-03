@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abc7cc8c-b95d-468d-8a48-7c6a76d34971" name="Default" comment="">
+    <list default="true" id="abc7cc8c-b95d-468d-8a48-7c6a76d34971" name="Default" comment="On the way to examining Busme! api.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/masters/journeys/index.html.erb" afterPath="$PROJECT_DIR$/app/views/masters/journeys/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/location_job.rb" afterPath="$PROJECT_DIR$/app/models/location_job.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="centro-data.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/database.yml" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379953549788" ignored="false" />
-    <file path="/Dummy.txt" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380841061584" ignored="false" />
+    <file path="/Dummy.txt" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380841562844" ignored="false" />
     <file path="/20130325202902_create_centro_buses.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379967133354" ignored="false" />
     <file path="/centro_bus.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380808205100" ignored="false" />
     <file path="/Gemfile" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379958041220" ignored="false" />
@@ -17,7 +18,7 @@
     <file path="/dependencies.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364249679312" ignored="false" />
     <file path="/jobs_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380757461197" ignored="false" />
     <file path="/routes.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379951928378" ignored="false" />
-    <file path="/index.html.erb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380841233004" ignored="false" />
+    <file path="/index.html.erb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380841640544" ignored="false" />
     <file path="/application.css" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364252351889" ignored="false" />
     <file path="/centro_buses_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379947561218" ignored="false" />
     <file path="/will_paginate.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364305263114" ignored="false" />
@@ -222,10 +223,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="location_job.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="location_job.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/location_job.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="54" selection-start="1994" selection-end="1994" vertical-scroll-proportion="0.0">
+            <state line="197" column="56" selection-start="7820" selection-end="7820" vertical-scroll-proportion="0.33333334">
               <folding />
             </state>
           </provider>
@@ -303,10 +304,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/masters/journeys/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="60" selection-start="2685" selection-end="2685" vertical-scroll-proportion="0.472">
+            <state line="76" column="62" selection-start="2810" selection-end="2871" vertical-scroll-proportion="-15.419354">
               <folding />
             </state>
           </provider>
@@ -350,8 +351,8 @@
         <option value="$PROJECT_DIR$/db/migrate/20131003155205_add_distance_to_journey.rb" />
         <option value="$PROJECT_DIR$/app/controllers/masters/journeys_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/journey.rb" />
-        <option value="$PROJECT_DIR$/app/models/location_job.rb" />
         <option value="$PROJECT_DIR$/app/views/masters/journeys/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/location_job.rb" />
       </list>
     </option>
   </component>
@@ -1854,7 +1855,11 @@
       <created>1380841064196</created>
       <updated>1380841064196</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="On the way to examining Busme! api.">
+      <created>1380841247521</created>
+      <updated>1380841247522</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2058,13 +2063,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/location_job.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="54" selection-start="1994" selection-end="1994" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/centro_bus.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="25" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0">
@@ -2074,7 +2072,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/masters/journeys/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="60" selection-start="2685" selection-end="2685" vertical-scroll-proportion="0.472">
+        <state line="76" column="62" selection-start="2810" selection-end="2871" vertical-scroll-proportion="-15.419354">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/location_job.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="197" column="56" selection-start="7820" selection-end="7820" vertical-scroll-proportion="0.33333334">
           <folding />
         </state>
       </provider>
