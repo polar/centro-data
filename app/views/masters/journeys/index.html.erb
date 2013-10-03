@@ -27,7 +27,7 @@
         <td>
         <% for res in  x.centro_bus.journey_results do %>
               <div>
-                <%= "distance #{res[:distance]} time_diff #{res[:time_diff]} ti_dist #{res[:ti_dist]}" %>
+                <%= "distance #{res[:distance]} time_diff #{res[:time_diff]} ti_dist #{res[:ti_dist]}".html_safe %>
               </div>
         <% end if x.centro_bus %>
         </td>
