@@ -164,6 +164,7 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
       report_journey_location(centro_bus)
     else
       if centro_bus_results
+        centro_bus.message = ""
         for r in centro_bus_results do
           journey = r[:journey]
           time = journey.start_time.strftime("%H:%M")
@@ -172,7 +173,7 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
           msg = "[#{time} #{dist} #{diff}] "
           centro_bus.message += msg
         end
-        centro_bus.journey_results = centro_bus_results.map {|x| x[:res] }
+        centro_bus.journey_results = centro_bus_results.map {|x| x[:res].first }
       end
 
       puts "Did not report on Centro Bus #{centro_bus.centroid} #{centro_bus.message}"
