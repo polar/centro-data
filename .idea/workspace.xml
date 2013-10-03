@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abc7cc8c-b95d-468d-8a48-7c6a76d34971" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/masters/journeys/index.html.erb" afterPath="$PROJECT_DIR$/app/views/masters/journeys/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/journey.rb" afterPath="$PROJECT_DIR$/app/models/journey.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="centro-data.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/database.yml" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379953549788" ignored="false" />
-    <file path="/Dummy.txt" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380836433983" ignored="false" />
+    <file path="/Dummy.txt" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380837767491" ignored="false" />
     <file path="/20130325202902_create_centro_buses.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379967133354" ignored="false" />
     <file path="/centro_bus.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380808205100" ignored="false" />
     <file path="/Gemfile" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379958041220" ignored="false" />
@@ -156,7 +155,7 @@
     <file path="/temp.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379867324353" ignored="false" />
     <file path="/patterns_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379867777261" ignored="false" />
     <file path="/20130919190512_create_masters.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379794973286" ignored="false" />
-    <file path="/journey.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380837642374" ignored="false" />
+    <file path="/journey.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380838069516" ignored="false" />
     <file path="/journeys_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380821822260" ignored="false" />
     <file path="/20130919185321_create_messages.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379794930887" ignored="false" />
     <file path="/20130919190044_create_user_logins.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379951285834" ignored="false" />
@@ -250,10 +249,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="journey.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="journey.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/journey.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="61" selection-start="649" selection-end="649" vertical-scroll-proportion="0.0">
+            <state line="30" column="20" selection-start="608" selection-end="608" vertical-scroll-proportion="0.5955882">
               <folding />
             </state>
           </provider>
@@ -304,10 +303,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/masters/journeys/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="13" selection-start="1731" selection-end="1731" vertical-scroll-proportion="0.296">
+            <state line="51" column="13" selection-start="1731" selection-end="1731" vertical-scroll-proportion="-4.774194">
               <folding />
             </state>
           </provider>
@@ -351,8 +350,8 @@
         <option value="$PROJECT_DIR$/db/migrate/20131003155205_add_distance_to_journey.rb" />
         <option value="$PROJECT_DIR$/app/controllers/masters/journeys_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/location_job.rb" />
-        <option value="$PROJECT_DIR$/app/models/journey.rb" />
         <option value="$PROJECT_DIR$/app/views/masters/journeys/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/journey.rb" />
       </list>
     </option>
   </component>
@@ -1827,7 +1826,11 @@
       <created>1380836437404</created>
       <updated>1380836437404</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="On the way to examining Busme! api.">
+      <created>1380837771735</created>
+      <updated>1380837771735</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2038,16 +2041,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/journey.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/masters/journeys/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="61" selection-start="649" selection-end="649" vertical-scroll-proportion="0.0">
+        <state line="51" column="13" selection-start="1731" selection-end="1731" vertical-scroll-proportion="-4.774194">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/masters/journeys/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/models/journey.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="13" selection-start="1731" selection-end="1731" vertical-scroll-proportion="0.296">
+        <state line="30" column="20" selection-start="608" selection-end="608" vertical-scroll-proportion="0.5955882">
           <folding />
         </state>
       </provider>
