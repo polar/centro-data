@@ -66,7 +66,7 @@
             <td><%= (centro_bus.journey.start_time).strftime("%H:%M") %></td>
             <td>
               <% for jres in centro_bus.journey_results %>
-                  <% for res in centro_bus.jres[:res] %>
+                  <% for res in jres[:res] %>
                   <div>
                     jny = Journey.find(jres[:journey])
                     Start <%= jny.start_time.strftime("%H:%M") %>
