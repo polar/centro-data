@@ -125,7 +125,7 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
 
   def figure_locations(centro_bus)
     time_now = Time.zone.now
-    if centro_bus.journey.nil?
+    if true || centro_bus.journey.nil?
       if true
         puts "Figure Locations Centro Bus #{centro_bus.centroid}...."
         centro_bus_results = []
