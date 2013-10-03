@@ -49,6 +49,7 @@
     <th>Start</th>
     <th>Status</th>
     <th><%= @time_now.strftime("%H:%M") %></th>
+    <th>JDist</th>
   </tr>
   <% for centro_bus in @centro_buses %>
       <tr>
@@ -68,6 +69,12 @@
                 Dist <%= "%6.2f%" % (res[:p_dist]) %>
               </div>
               <% end %>
+            </td>
+            <td>
+              <%= centro_bus.journey.sched_time(@time_now).strftime("%H:%M") %>
+            </td>
+            <td>
+              <%= "%8.2f%" % centro_bus.journey.p_dist(@time_now) %>
             </td>
         <% else %>
             <td colspan="2"><%= centro_bus.message %></td>

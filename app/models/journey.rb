@@ -27,6 +27,10 @@ class Journey < ActiveRecord::Base
     res = [res, 100].min
   end
 
+  def sched_time(time_now)
+    p_dist/100 * average_speed * (time_now - start_time)/60.0
+  end
+
   def start_time
     ActiveSupport::TimeZone.new(time_zone).parse("0:00") + start_offset.minutes
   end
