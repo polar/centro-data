@@ -13,9 +13,9 @@ class CentroBus < ActiveRecord::Base
     hash["centroid"] = hash["id"]
     hash.delete("id")
     hash["time"] = time
-    hash["journey_results"] = []
     cb = CentroBus.where(:centroid => hash["centroid"]).first
     if cb.nil?
+      hash["journey_results"] = []
       cb = CentroBus.create(hash)
     else
       cb.update(hash)

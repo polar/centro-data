@@ -103,12 +103,11 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
     end
   end
 
-  def time_diff(time_now, base_time, offset, ti_dist)
-    time_now - (base_time + offset.minutes + ti_dist.minutes)
+  def time_diff(time_now, journey, ti_dist)
+    time_now - journey.start_time + ti_dist.minutes
   end
 
   def figure_locations(centro_bus)
-    base_time = Time.zone.parse("0:00")
     time_now = Time.zone.now
     if centro_bus.journey.nil?
       if true
@@ -124,7 +123,7 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
             results = getPossible(journey.pattern.coords, [centro_bus.lon, centro_bus.lat], 120, average_speed)
             if results && results.size > 0
               results.each do |r|
-                r[:time_diff]  = time_diff(time_now, base_time, journey.start_offset, r[:ti_dist])
+                r[:time_diff]  = time_diff(time_now, journey, r[:ti_dist])
                 r[:time_start] = journey.start_offset
               end
               results.sort! {|x,y| x[:time_diff] <=> y[:time_diff]}
