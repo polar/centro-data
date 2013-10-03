@@ -119,7 +119,7 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
         r[:time_diff]  = time_diff(time_now, journey, r[:ti_dist])
         r[:time_start] = journey.start_offset
       end
-      results.sort! {|x,y| x[:time_diff] <=> y[:time_diff]}
+      results.sort! {|x,y| x[:time_diff].abs <=> y[:time_diff].abs}
     end
     results
   end
