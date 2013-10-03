@@ -113,6 +113,7 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
     if results && results.size > 0
       results.each do |r|
         r[:p_dist] = 100*r[:distance]/journey.path_distance
+        r[:p_dist_diff] = r[:p_dist] - journey.p_dist(time_now)
         r[:sched_time] = journey.start_time + r[:ti_dist].minutes
         r[:time_diff]  = time_diff(time_now, journey, r[:ti_dist])
         r[:time_start] = journey.start_offset

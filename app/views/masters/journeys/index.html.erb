@@ -29,7 +29,7 @@
         <td>
         <% for res in  x.centro_bus.journey_results do %>
               <div>
-                <%= "distance #{"%6.2f" % res[:p_dist]}% sched #{res[:sched_time].in_time_zone(x.time_zone).strftime("%H:%M")} time_diff #{"%6.2f" % (res[:time_diff]/60.0)} ti_dist #{"%6.2f" % res[:ti_dist]}".html_safe %>
+                <%= "p_dist_diff #{"%6.2f%" % res[:p_dist_diff]} p_dist #{"%6.2f" % res[:p_dist]}% sched #{res[:sched_time].in_time_zone(x.time_zone).strftime("%H:%M")} time_diff #{"%6.2f" % (res[:time_diff]/60.0)} ti_dist #{"%6.2f" % res[:ti_dist]}".html_safe %>
               </div>
         <% end if x.centro_bus %>
         </td>

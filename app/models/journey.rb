@@ -22,7 +22,7 @@ class Journey < ActiveRecord::Base
   end
 
   def p_dist(time_now)
-    average_speed * (time_now - start_time)/60.0
+    (average_speed * (time_now - start_time)/60.0) / path_distance * 100
   end
 
   def start_time
