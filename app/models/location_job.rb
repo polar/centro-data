@@ -123,6 +123,11 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
             average_speed = journey.average_speed
             results = getPossible(journey.pattern.coords, [centro_bus.lon, centro_bus.lat], 120, average_speed)
             if results && results.size > 0
+              results.each do |r|
+                r[:time_diff]  = time_diff(time_now, base_time, journey.start_offset, r[:ti_dist])
+                r[:time_start] = journey.start_offset
+              end
+              results.sort! {|x,y| x[:time_diff] <=> y[:time_diff]}
               centro_bus_results << {:journey => journey, :res => results}
             end
             puts "ActiveJourney.find_by_persistentid(:active, '#{journey.persistentid}').vehicle_journey.journey_pattern.get_possible(#{[centro_bus.lon, centro_bus.lat]}, 60)"
@@ -141,13 +146,6 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
         puts "Have #{centro_bus.journeys.size} journeys for CentroBus #{centro_bus.centroid}"
         centro_bus.message = "Have #{centro_bus.journeys.size} journeys. "
         # Sort by closest to time now. Might not be totally correct.
-        centro_bus_results.each do |x|
-          for r in x[:res] do
-            r[:time_diff]  = time_diff(time_now, base_time, x[:journey].start_offset, r[:ti_dist])
-            r[:time_start] = x[:journey].start_offset
-          end
-          x[:res].sort! {|x,y| x[:time_diff] <=> y[:time_diff]}
-        end
         centro_bus_results.sort! {|x,y| x[:res][0][:time_diff] <=> y[:res][0][:time_diff] }
         for r in centro_bus_results do
           # We don't want busses that haven't started yet.
