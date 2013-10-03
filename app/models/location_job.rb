@@ -134,14 +134,8 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
         puts "From #{js.size} for #{centro_bus.rt} we are looking at #{js1.size} unassigned journeys in which #{journeys.size} match direction...."
         journeys.each do |journey|
           if centro_direction_match?(centro_bus, journey)
-            average_speed = journey.average_speed
-            results = getPossible(journey.pattern.coords, [centro_bus.lon, centro_bus.lat], 120, average_speed)
+            results = getResults(time_now, journey, centro_bus)
             if results && results.size > 0
-              results.each do |r|
-                r[:time_diff]  = time_diff(time_now, journey, r[:ti_dist])
-                r[:time_start] = journey.start_offset
-              end
-              results.sort! {|x,y| x[:time_diff] <=> y[:time_diff]}
               centro_bus_results << {:journey => journey, :res => results}
             end
             puts "ActiveJourney.find_by_persistentid(:active, '#{journey.persistentid}').vehicle_journey.journey_pattern.get_possible(#{[centro_bus.lon, centro_bus.lat]}, 60)"
