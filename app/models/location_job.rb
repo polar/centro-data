@@ -103,8 +103,9 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
     end
   end
 
+  # Negative is early.
   def time_diff(time_now, journey, ti_dist)
-    time_now - journey.start_time + ti_dist.minutes
+    journey.start_time + ti_dist.minutes - time_now
   end
 
   def getResults(time_now, journey, centro_bus)
@@ -166,7 +167,7 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
         centro_bus_results.sort! {|x,y| x[:res][0][:time_diff] <=> y[:res][0][:time_diff] }
         for r in centro_bus_results do
           # We don't want buses that haven't started yet.
-          if r[:res][0][:time_diff] > 0
+          if time_now > r[:journey].start_time && r[:res][0][:time_diff] > 0
             if centro_bus.journey && centro_bus.journey.id != centro_bus_results.first[:journey].id
               puts "Changing journey for CentroBus from #{centro_bus.journey.start_time.strftime('%H:%M')} to #{r[:journey].start_time.strftime('%H:%M')}"
               centro_bus.journey.centro_bus = nil
