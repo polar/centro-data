@@ -150,7 +150,7 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
       if centro_bus_results.size == 1
         puts "Found one journey for CentroBus #{centro_bus.centroid}"
         if centro_bus.journey && centro_bus.journey.id != centro_bus_results.first[:journey].id
-          puts "Changing journey for CentroBus from #{centro_bus.journey.start_time.strtime('%H:%M')} to #{centro_bus_results.first[:journey].start_time.strftime('%H:%M')}"
+          puts "Changing journey for CentroBus from #{centro_bus.journey.start_time.strftime('%H:%M')} to #{centro_bus_results.first[:journey].start_time.strftime('%H:%M')}"
           centro_bus.journey.centro_bus = nil
         end
         centro_bus.journey = centro_bus_results.first[:journey]
@@ -167,7 +167,7 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
           # We don't want buses that haven't started yet.
           if r[:res][0][:time_diff] > 0
             if centro_bus.journey && centro_bus.journey.id != centro_bus_results.first[:journey].id
-              puts "Changing journey for CentroBus from #{centro_bus.journey.start_time.strtime('%H:%M')} to #{r[:journey].start_time.strftime('%H:%M')}"
+              puts "Changing journey for CentroBus from #{centro_bus.journey.start_time.strftime('%H:%M')} to #{r[:journey].start_time.strftime('%H:%M')}"
               centro_bus.journey.centro_bus = nil
             end
             centro_bus.journey =  r[:journey]
