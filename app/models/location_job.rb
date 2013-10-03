@@ -126,7 +126,7 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
   def figure_locations(centro_bus)
     time_now = Time.zone.now
     if true || centro_bus.journey.nil?
-      if centro_bus.journey.nil?
+      if !centro_bus.journey.nil?
         puts "Centro  Bus #{centro_bus.centroid} #{centro_bus.rt} is assigned #{centro_bus.journey.start_time.strftime("%H:%M")}"
       end
       if true
