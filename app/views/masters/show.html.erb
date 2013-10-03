@@ -53,10 +53,11 @@
         <td><%= x.route_code %></td>
         <td><%= x.persistentid %></td>
         <td><%= x.version %></td>
-        <td><%= (Time.zone.parse("0:00") + x.start_offset.minutes).strftime("%H:%M") if x.start_offset %></td>
-        <td><%= (Time.zone.parse("0:00") + x.start_offset.minutes + x.duration.minutes).strftime("%H:%M") if x.start_offset %></td>
+        <td><%= x.start_time.strftime("%H:%M") if x.start_offset %></td>
+        <td><%= x.end_time.strftime("%H:%M") if x.start_offset %></td>
         <td><%= x.vid %></td>
         <td><%= x.dir %></td>
+        <td><%= x.active?(Time.zone.now) ? "*" : "" %></td>
         <td><%= x.centro_bus.centroid if x.centro_bus %></td>
         <td><%= x.centro_bus.dd if x.centro_bus %></td>
       </tr>

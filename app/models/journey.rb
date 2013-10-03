@@ -21,6 +21,18 @@ class Journey < ActiveRecord::Base
     getPathDistance(pattern.coords)/duration # feet/minute
   end
 
+  def start_time
+    Time.zone.parse("0:00") + start_offset.minutes
+  end
+
+  def end_time
+    start_time + duration.minutes
+  end
+
+  def active?(time)
+    start_time <= time && time <= end_time
+  end
+
   def from_hash(hash)
     hash.each_pair do |k,v|
       case k
