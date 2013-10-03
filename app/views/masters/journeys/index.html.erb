@@ -27,11 +27,14 @@
         <td><%= x.centro_bus.centroid if x.centro_bus %></td>
         <td><%= x.centro_bus.dd if x.centro_bus %></td>
         <td>
-        <% for res in  x.centro_bus.journey_results do %>
+        <%= for jres in x.centro_bus.journey_results do %>
+        <% for res in jres[:res] do %>
               <div>
-                <%= "p_dist_diff #{"%6.2f%" % res[:p_dist_diff]} p_dist #{"%6.2f" % res[:p_dist]}% sched #{res[:sched_time].in_time_zone(x.time_zone).strftime("%H:%M")} time_diff #{"%6.2f" % (res[:time_diff]/60.0)} ti_dist #{"%6.2f" % res[:ti_dist]}".html_safe %>
+                <%= "#{jres[:journey].start_time.strftime("%H:%M")} p_dist_diff #{"%6.2f%" % res[:p_dist_diff]} p_dist #{"%6.2f" % res[:p_dist]}% sched #{res[:sched_time].in_time_zone(x.time_zone).strftime("%H:%M")} time_diff #{"%6.2f" % (res[:time_diff]/60.0)} ti_dist #{"%6.2f" % res[:ti_dist]}".html_safe %>
               </div>
+        <% end %>
         <% end if x.centro_bus %>
+
         </td>
       </tr>
   <% end %>
@@ -62,12 +65,16 @@
             <td><%= link_to centro_bus.journey.name, master_journey_path(@master, centro_bus.journey) %></td>
             <td><%= (centro_bus.journey.start_time).strftime("%H:%M") %></td>
             <td>
-              <% for res in centro_bus.journey_results %>
-              <div>
-                Sched <%= res[:sched_time].in_time_zone(centro_bus.journey.time_zone).strftime("%H:%M") %>
-                Diff <%= "%6.2f" % (res[:time_diff]/60.0) %>
-                Dist <%= "%6.2f%" % (res[:p_dist]) %>
-              </div>
+              <% for jres in centro_bus.journey_results %>
+                  <% for res in centro_bus.jres[:res] %>
+                  <div>
+                    Start <%= jres[:journey].start_time.strftime("%H:%M") %>
+                    Sched <%= res[:sched_time].in_time_zone(centro_bus.journey.time_zone).strftime("%H:%M") %>
+                    Diff <%= "%6.2f" % (res[:time_diff]/60.0) %>
+                    Dist <%= "%6.2f%" % (res[:p_dist]) %>
+                  </div>
+                 <% end %>
+
               <% end %>
             </td>
             <td>

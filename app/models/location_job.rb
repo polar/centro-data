@@ -156,7 +156,7 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
           centro_bus.journey.save
         end
         centro_bus.journey = centro_bus_results.first[:journey]
-        centro_bus.journey_results = centro_bus_results.first[:res]
+        centro_bus.journey_results = centro_bus_results
         centro_bus.save
         centro_bus.journey.centro_bus = centro_bus
         centro_bus.journey.save
@@ -175,7 +175,7 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
               centro_bus.journey.save
             end
             centro_bus.journey =  r[:journey]
-            centro_bus.journey_results = r[:res]
+            centro_bus.journey_results = centro_bus_results
             centro_bus.save
             centro_bus.journey.centro_bus = centro_bus
             centro_bus.journey.save
@@ -198,7 +198,7 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
           msg = "[#{time} #{dist} #{diff}] "
           centro_bus.message += msg
         end
-        centro_bus.journey_results = centro_bus_results.map {|x| x[:res].first }
+        centro_bus.journey_results = centro_bus_results
       end
 
       puts "Did not report on Centro Bus #{centro_bus.centroid} #{centro_bus.message}"
