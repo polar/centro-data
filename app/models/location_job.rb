@@ -159,7 +159,7 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
           # We don't want buses that haven't started yet.
           if r[:res][0][:time_diff] > 0
             centro_bus.journey =  r[:journey]
-            centro_bus.journey_results = r[:res]
+            centro_bus.journey_results = x[:res]
             centro_bus.save
             centro_bus.journey.centro_bus = centro_bus
             centro_bus.journey.save

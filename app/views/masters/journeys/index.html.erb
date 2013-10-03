@@ -27,7 +27,7 @@
         <td>
         <% for res in  x.centro_bus.journey_results do %>
               <div>
-                <%= "distance #{res[:p_dist]}% sched #{res[:sched_time].strftime("%H:%M")}time_diff #{"%6.2d" % (res[:time_diff]/60)} ti_dist #{"%6.2d" % res[:ti_dist]}".html_safe %>
+                <%= "distance #{res[:p_dist]}% sched #{res[:sched_time].in_time_zone(x.time_zone).strftime("%H:%M")} time_diff #{"%6.2f" % (res[:time_diff]/60.0)} ti_dist #{"%6.2f" % res[:ti_dist]}".html_safe %>
               </div>
         <% end if x.centro_bus %>
         </td>
@@ -60,6 +60,14 @@
         <% if centro_bus.journey %>
             <td><%= link_to centro_bus.journey.name, master_journey_path(@master, centro_bus.journey) %></td>
             <td><%= (centro_bus.journey.start_time).strftime("%H:%M") %></td>
+            <td>
+              <% for res in centro_bus.journey_results %>
+              <div>
+                Sched <%= res[:sched_time].in_time_zone(centro_bus.journey.time_zone).strftime("%H:%M") %>
+                Diff <%= "%6.2f" % res[:time_diff] %>
+              </div>
+              <% end %>
+            </td>
         <% else %>
             <td colspan="2"><%= centro_bus.message %></td>
         <% end %>
