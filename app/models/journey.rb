@@ -28,7 +28,7 @@ class Journey < ActiveRecord::Base
   end
 
   def sched_time(time_now)
-    p_dist(time_now)/100 * average_speed * (time_now - start_time)/60.0
+    start_time + (p_dist(time_now)/100 * duration).minutes
   end
 
   def start_time
