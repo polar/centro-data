@@ -30,7 +30,7 @@ class Journey < ActiveRecord::Base
   end
 
   def active?(time)
-    start_time <= time && time <= end_time
+    start_time <= time && time <= end_time if time_zone
   end
 
   def from_hash(hash)

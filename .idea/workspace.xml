@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abc7cc8c-b95d-468d-8a48-7c6a76d34971" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/centro_bus.rb" afterPath="$PROJECT_DIR$/app/models/centro_bus.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/masters/journeys/index.html.erb" afterPath="$PROJECT_DIR$/app/views/masters/journeys/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/journey.rb" afterPath="$PROJECT_DIR$/app/models/journey.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="centro-data.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/database.yml" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379953549788" ignored="false" />
-    <file path="/Dummy.txt" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380807991822" ignored="false" />
+    <file path="/Dummy.txt" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380808222125" ignored="false" />
     <file path="/20130325202902_create_centro_buses.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379967133354" ignored="false" />
     <file path="/centro_bus.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380808205100" ignored="false" />
     <file path="/Gemfile" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379958041220" ignored="false" />
@@ -17,7 +18,7 @@
     <file path="/dependencies.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364249679312" ignored="false" />
     <file path="/jobs_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380757461197" ignored="false" />
     <file path="/routes.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379951928378" ignored="false" />
-    <file path="/index.html.erb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380807983615" ignored="false" />
+    <file path="/index.html.erb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380808641269" ignored="false" />
     <file path="/application.css" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364252351889" ignored="false" />
     <file path="/centro_buses_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379947561218" ignored="false" />
     <file path="/will_paginate.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1364305263114" ignored="false" />
@@ -155,7 +156,7 @@
     <file path="/temp.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379867324353" ignored="false" />
     <file path="/patterns_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379867777261" ignored="false" />
     <file path="/20130919190512_create_masters.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379794973286" ignored="false" />
-    <file path="/journey.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380801272116" ignored="false" />
+    <file path="/journey.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380808512676" ignored="false" />
     <file path="/journeys_controller.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1380805769995" ignored="false" />
     <file path="/20130919185321_create_messages.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379794930887" ignored="false" />
     <file path="/20130919190044_create_user_logins.rb" changelist="abc7cc8c-b95d-468d-8a48-7c6a76d34971" time="1379951285834" ignored="false" />
@@ -230,10 +231,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="centro_bus.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="centro_bus.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/centro_bus.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="32" selection-start="375" selection-end="375" vertical-scroll-proportion="0.51487416">
+            <state line="15" column="32" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -275,10 +276,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/masters/journeys/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="31" selection-start="1167" selection-end="1167" vertical-scroll-proportion="-15.625">
+            <state line="26" column="66" selection-start="954" selection-end="954" vertical-scroll-proportion="0.65375304">
               <folding />
             </state>
           </provider>
@@ -305,7 +306,7 @@
       <file leaf-file-name="journey.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/journey.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="44" selection-start="420" selection-end="420" vertical-scroll-proportion="0.0">
+            <state line="30" column="58" selection-start="563" selection-end="563" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -343,14 +344,14 @@
         <option value="$PROJECT_DIR$/app/models/refresh_job.rb" />
         <option value="$PROJECT_DIR$/app/views/masters/show.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20131003114111_add_centro_buses.rb" />
-        <option value="$PROJECT_DIR$/app/models/journey.rb" />
         <option value="$PROJECT_DIR$/app/controllers/masters_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/masters/journeys/show.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20131003131254_add_journey_results.rb" />
         <option value="$PROJECT_DIR$/app/controllers/masters/journeys_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/location_job.rb" />
-        <option value="$PROJECT_DIR$/app/views/masters/journeys/index.html.erb" />
         <option value="$PROJECT_DIR$/app/models/centro_bus.rb" />
+        <option value="$PROJECT_DIR$/app/models/journey.rb" />
+        <option value="$PROJECT_DIR$/app/views/masters/journeys/index.html.erb" />
       </list>
     </option>
   </component>
@@ -1669,7 +1670,11 @@
       <created>1380807995193</created>
       <updated>1380807995193</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="On the way to examining Busme! api.">
+      <created>1380808225546</created>
+      <updated>1380808225546</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1852,13 +1857,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/journey.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="44" selection-start="420" selection-end="420" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130325202902_create_centro_buses.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1866,9 +1864,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/centro_bus.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="32" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/masters/journeys_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="10" selection-start="440" selection-end="440" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/journey.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="58" selection-start="563" selection-end="563" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1882,14 +1894,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/masters/journeys/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="31" selection-start="1167" selection-end="1167" vertical-scroll-proportion="-15.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/centro_bus.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="32" selection-start="375" selection-end="375" vertical-scroll-proportion="0.51487416">
+        <state line="26" column="66" selection-start="954" selection-end="954" vertical-scroll-proportion="0.65375304">
           <folding />
         </state>
       </provider>

@@ -8,6 +8,7 @@
     <th colspan="2"><%= Time.now.in_time_zone("America/New_York").strftime("%H:%M") %></th>
     <th>Vid</th>
     <th>Direction</th>
+    <th>Current</th>
     <th>Centro Bus</th>
   </tr>
   </thead>
@@ -24,7 +25,7 @@
         <td><%= x.centro_bus.centroid if x.centro_bus %></td>
         <td><%= x.centro_bus.dd if x.centro_bus %></td>
         <td>
-        <% for res in  x.centro_bus.journey_results %>
+        <% for res in  x.centro_bus.journey_results do %>
               <div>
                 <%= "distance #{res[:distance]} time_diff #{res[:time_diff]} ti_dist #{res[:ti_dist]}" %>
               </div>
