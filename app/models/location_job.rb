@@ -108,8 +108,8 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
   end
 
   def figure_locations(centro_bus)
-    base_time = Time.parse("0:00")
-    time_now = Time.now
+    base_time = Time.zone.parse("0:00")
+    time_now = Time.zone.now
     if centro_bus.journey.nil?
       if true
         puts "Figure Locations Centro Bus #{centro_bus.centroid}...."
@@ -167,8 +167,8 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
       for r in centro_bus_results do
         journey = r[:journey]
         time = journey.start_time.strftime("%H:%M")
-        dist = r[:res][0][:distance] % "%-8.2d"
-        diff = r[:res][0][:time_diff] % "%-8.2d"
+        dist = "%-8.2d" % r[:res][0][:distance]
+        diff = "%-8.2d" % r[:res][0][:time_diff]
         msg = "[#{time} #{dist} #{diff}] "
         centro_bus.message += msg
       end  if centro_bus_results
