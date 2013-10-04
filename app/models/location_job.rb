@@ -110,7 +110,7 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
 
   def getResults(time_now, journey, centro_bus)
     average_speed = journey.average_speed
-    results = getPossible(journey.pattern.coords, [centro_bus.lon, centro_bus.lat], 120, average_speed)
+    results = getPossible(journey.pattern.coords, [centro_bus.lon, centro_bus.lat], 60, average_speed)
     if results && results.size > 0
       results.each do |r|
         r[:p_dist] = 100*r[:distance]/journey.path_distance
