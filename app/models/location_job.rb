@@ -134,8 +134,7 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
         puts "Figure Locations Centro Bus #{centro_bus.centroid}...."
         centro_bus_results = []
         js = Journey.where(:master_id => master.id, :route_code => centro_bus.rt).all
-        js1 = js.select{|x| x.centro_bus.nil? }
-        journeys = js1.select {|x| centro_direction_match?(centro_bus, x)}
+        journeys = js.select {|x| centro_direction_match?(centro_bus, x)}
         puts "From #{js.size} for #{centro_bus.rt} we are looking at #{js1.size} unassigned journeys in which #{journeys.size} match direction...."
         journeys.each do |journey|
           if centro_direction_match?(centro_bus, journey)
