@@ -114,7 +114,7 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
     if results && results.size > 0
       results.each do |r|
         r[:p_dist] = 100*r[:distance]/journey.path_distance
-        r[:p_dist_diff] = r[:p_dist] - journey.p_dist(time_now)
+        r[:p_dist_diff] = journey.p_dist(time_now) - r[:p_dist]
         r[:sched_time] = journey.start_time + r[:ti_dist].minutes
         r[:time_diff]  = time_diff(time_now, journey, r[:ti_dist])
         r[:time_start] = journey.start_offset
@@ -122,6 +122,12 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
       results.sort! {|x,y| x[:time_diff].abs <=> y[:time_diff].abs}
     end
     results
+  end
+
+  def resultApplies?(time_now, r)
+    time_diff = r[:res][0][:time_diff]
+    journey = r[:journey]
+    time_now > journey.start_time && -5.minutes < time_diff && -5.0 < r[:res][:p_dist_diff]
   end
 
   def figure_locations(centro_bus)
@@ -149,25 +155,27 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
       end
       if centro_bus_results.size == 1
         puts "Found one journey for CentroBus #{centro_bus.centroid}"
-        if centro_bus.journey && centro_bus.journey.id != centro_bus_results.first[:journey].id
-          puts "Changing journey for CentroBus from #{centro_bus.journey.start_time.strftime('%H:%M')} to #{centro_bus_results.first[:journey].start_time.strftime('%H:%M')}"
-          centro_bus.journey.centro_bus = nil
+        if resultApplies?(time_now, centro_bus_results.first)
+          if centro_bus.journey && centro_bus.journey.id != centro_bus_results.first[:journey].id
+            puts "Changing journey for CentroBus from #{centro_bus.journey.start_time.strftime('%H:%M')} to #{centro_bus_results.first[:journey].start_time.strftime('%H:%M')}"
+            centro_bus.journey.centro_bus = nil
+            centro_bus.journey.save
+          end
+          centro_bus.journey = centro_bus_results.first[:journey]
+          centro_bus.journey_results = centro_bus_results.map {|x| x[:journey] = x[:journey].id; x}
+          centro_bus.save
+          centro_bus.journey.centro_bus = centro_bus
           centro_bus.journey.save
+        else
+          puts "Single answer does not apply. Ignoring."
         end
-        centro_bus.journey = centro_bus_results.first[:journey]
-        centro_bus.journey_results = centro_bus_results.map {|x| x[:journey] = x[:journey].id; x}
-        centro_bus.save
-        centro_bus.journey.centro_bus = centro_bus
-        centro_bus.journey.save
       else
         puts "Have #{centro_bus.journeys.size} journeys for CentroBus #{centro_bus.centroid}"
         centro_bus.message = "Have #{centro_bus.journeys.size} journeys. "
         # Sort by closest to time now. Might not be totally correct.
         centro_bus_results.sort! {|x,y| x[:res][0][:time_diff] <=> y[:res][0][:time_diff] }
         for r in centro_bus_results do
-          # We don't want buses that haven't started yet.
-          time_diff = r[:res][0][:time_diff]
-          if time_now > r[:journey].start_time && -5.minutes < time_diff
+          if resultApplies?(time_now, r)
             if centro_bus.journey && centro_bus.journey.id != centro_bus_results.first[:journey].id
               puts "Changing journey for CentroBus from #{centro_bus.journey.start_time.strftime('%H:%M')} to #{r[:journey].start_time.strftime('%H:%M')}"
               centro_bus.journey.centro_bus = nil
