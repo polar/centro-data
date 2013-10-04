@@ -30,7 +30,7 @@
         <% for jres in x.centro_bus.journey_results do %>
         <% for res in jres[:res] do %>
               <div>
-                <%= "#{Journey.find(jres[:journey]).start_time.strftime("%H:%M")} p_dist_diff #{"%6.2f%" % res[:p_dist_diff]} p_dist #{"%6.2f" % res[:p_dist]}% sched #{res[:sched_time].in_time_zone(x.time_zone).strftime("%H:%M")} time_diff #{"%6.2f" % (res[:time_diff]/60.0)} ti_dist #{"%6.2f" % res[:ti_dist]}".html_safe %>
+                <%= "#{Journey.find(jres[:journey]).start_time.strftime("%H:%M")} #{res[:selected]?"*":" "} p_dist_diff #{"%6.2f%" % res[:p_dist_diff]} p_dist #{"%6.2f" % res[:p_dist]}% sched #{res[:sched_time].in_time_zone(x.time_zone).strftime("%H:%M")} time_diff #{"%6.2f" % (res[:time_diff]/60.0)} ti_dist #{"%6.2f" % res[:ti_dist]}".html_safe %>
               </div>
         <% end %>
         <% end if x.centro_bus %>
@@ -75,6 +75,7 @@
                   <% for res in jres[:res] %>
                   <div>
                     <% jny = Journey.find(jres[:journey]) %>
+                    <%= "#{res[:selected]?"*":" "}" %>
                     Start <%= jny.start_time.strftime("%H:%M") %>
                     Sched <%= res[:sched_time].in_time_zone(centro_bus.journey.time_zone).strftime("%H:%M") %>
                     Diff <%= "%6.2f" % (res[:time_diff]/60.0) %>

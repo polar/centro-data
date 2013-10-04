@@ -124,10 +124,17 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
     results
   end
 
-  def resultApplies?(time_now, r)
-    time_diff = r[:res][0][:time_diff]
-    journey = r[:journey]
-    time_now > journey.start_time && -5.minutes < time_diff && -5.0 < r[:res][:p_dist_diff]
+  def resultApplies?(time_now, result)
+    journey = result[:journey]
+    if time_now > journey.start_time
+      for r in result[:res] do
+        time_diff = r[:time_diff]
+        if -5.minutes < time_diff && -5.0 < r[:p_dist_diff]
+          return result
+        end
+      end
+    end
+    return nil
   end
 
   def figure_locations(centro_bus)
@@ -175,12 +182,13 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
         # Sort by closest to time now. Might not be totally correct.
         centro_bus_results.sort! {|x,y| x[:res][0][:time_diff] <=> y[:res][0][:time_diff] }
         for r in centro_bus_results do
-          if resultApplies?(time_now, r)
-            if centro_bus.journey && centro_bus.journey.id != centro_bus_results.first[:journey].id
+          if ans = resultApplies?(time_now, r)
+            if centro_bus.journey && centro_bus.journey.id != ans[:journey].id
               puts "Changing journey for CentroBus from #{centro_bus.journey.start_time.strftime('%H:%M')} to #{r[:journey].start_time.strftime('%H:%M')}"
               centro_bus.journey.centro_bus = nil
               centro_bus.journey.save
             end
+            ans[:selected] = true
             centro_bus.journey =  r[:journey]
             centro_bus.journey_results = centro_bus_results.map {|x| x[:journey] = x[:journey].id; x}
             centro_bus.save
