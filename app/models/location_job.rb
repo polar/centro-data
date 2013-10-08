@@ -43,8 +43,8 @@ class LocationJob < Struct.new(:queue, :period, :master_id)
     self.master = Master.find(master_id)
     self.api = master.api
 
-    auth_token = "DFsBxSuxtR2xyasFpwJM"
-    auth_token = "kmZ95RYyJpahMfNTZsVw"
+    auth_token = "DFsBxSuxtR2xyasFpwJM" # polar@syr.edu busme.us
+    #auth_token = "kmZ95RYyJpahMfNTZsVw" # polar@syr.edu busme-stage.adiron.com
     auth(auth_token)
     buses = []
     route_codes = master.journeys.map {|x| x.route_code}.uniq
