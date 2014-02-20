@@ -81,7 +81,6 @@ ActiveRecord::Schema.define(version: 20131003155205) do
     t.string   "wid2"
     t.string   "time"
     t.integer  "journey_id"
-    t.text     "message"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "journey_results"
@@ -101,7 +100,7 @@ ActiveRecord::Schema.define(version: 20131003155205) do
     t.datetime "updated_at"
   end
 
-  add_index "delayed_jobs", ["priority", "run_at"], name: "delayed_jobs_priority", using: :btree
+  add_index "delayed_jobs", ["priority", "run_at"], name: "delayed_jobs_priority"
 
   create_table "journeys", force: true do |t|
     t.string  "persistentid"
@@ -160,7 +159,7 @@ ActiveRecord::Schema.define(version: 20131003155205) do
     t.string  "route_type"
     t.integer "version"
     t.float   "distance"
-    t.text    "coords"
+    t.string  "coords"
     t.integer "api_id"
     t.integer "master_id"
     t.integer "route_id"

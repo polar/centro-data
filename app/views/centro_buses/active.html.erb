@@ -21,7 +21,7 @@
         <td><%= centro_bus.time %></td>
         <% if centro_bus.journey %>
             <td><%= link_to centro_bus.journey.name, master_journey_path(@master, centro_bus.journey) %></td>
-            <td><%= (Time.parse("0:00") + centro_bus.journey.start_offset.minutes).strftime("%H:%M") %></td>
+            <td><%= (ActiveSupport::TimeZone[@master.api.time_offset.to_i].parse("0:00") + centro_bus.journey.start_offset.minutes).strftime("%H:%M") %></td>
         <% else %>
             <td colspan="2"><%= centro_bus.message %></td>
         <% end %>
