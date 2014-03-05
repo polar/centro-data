@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131003155205) do
+ActiveRecord::Schema.define(version: 20140305230113) do
 
   create_table "apis", force: true do |t|
     t.integer  "major_version"
@@ -176,9 +176,9 @@ ActiveRecord::Schema.define(version: 20131003155205) do
     t.float   "nw_lat"
     t.float   "se_lon"
     t.float   "se_lat"
-    t.string  "patternids"
     t.integer "api_id"
     t.integer "master_id"
+    t.text    "patternids"
   end
 
   create_table "user_logins", force: true do |t|
