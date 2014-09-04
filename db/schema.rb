@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140904144932) do
+ActiveRecord::Schema.define(version: 20140904151555) do
 
   create_table "apis", force: true do |t|
     t.integer  "major_version"
@@ -141,6 +141,7 @@ ActiveRecord::Schema.define(version: 20140904144932) do
     t.text    "description"
     t.integer "api_id"
     t.string  "mode"
+    t.string  "deployment_slug"
   end
 
   create_table "messages", force: true do |t|
