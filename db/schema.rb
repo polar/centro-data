@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140904151555) do
+ActiveRecord::Schema.define(version: 20140904151835) do
 
   create_table "apis", force: true do |t|
     t.integer  "major_version"
@@ -59,6 +59,7 @@ ActiveRecord::Schema.define(version: 20140904151555) do
     t.string   "banner_click_thru"
     t.string   "banner_image"
     t.integer  "master_id"
+    t.string   "deployment_slug"
   end
 
   create_table "centro_buses", force: true do |t|
