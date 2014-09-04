@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140305230113) do
+ActiveRecord::Schema.define(version: 20140904144932) do
 
   create_table "apis", force: true do |t|
     t.integer  "major_version"
@@ -81,6 +81,7 @@ ActiveRecord::Schema.define(version: 20140305230113) do
     t.string   "wid2"
     t.string   "time"
     t.integer  "journey_id"
+    t.text     "message"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "journey_results"
@@ -139,6 +140,7 @@ ActiveRecord::Schema.define(version: 20140305230113) do
     t.string  "title"
     t.text    "description"
     t.integer "api_id"
+    t.string  "mode"
   end
 
   create_table "messages", force: true do |t|
@@ -159,7 +161,7 @@ ActiveRecord::Schema.define(version: 20140305230113) do
     t.string  "route_type"
     t.integer "version"
     t.float   "distance"
-    t.string  "coords"
+    t.text    "coords"
     t.integer "api_id"
     t.integer "master_id"
     t.integer "route_id"
