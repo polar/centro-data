@@ -16,7 +16,11 @@ class Pattern < ActiveRecord::Base
         when "JPs"
           self.coords = v["JP"].map{|x| [x["lon"].to_f,x["lat"].to_f] }
         else
-          self.send("#{k.underscore}=", v)
+          begin
+            self.send("#{k.underscore}=", v)
+          rescue
+            puts "NO method for #{k.underscore}= #{v}"
+          end
       end
     end
 

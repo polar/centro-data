@@ -57,7 +57,11 @@ class Journey < ActiveRecord::Base
         when "duration"
           self.duration = v.to_i
         else
-          self.send("#{k.underscore}=", v)
+          begin
+            self.send("#{k.underscore}=", v)
+          rescue
+            puts "NO method for #{k.underscore}= #{v}"
+          end
       end
     end
 

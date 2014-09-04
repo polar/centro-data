@@ -11,7 +11,11 @@ class Message < ActiveRecord::Base
           self.expiry_time = Time.at(v.to_i)
 
         else
-          self.send("#{k.underscore}=", v)
+          begin
+            self.send("#{k.underscore}=", v)
+          rescue
+            puts "NO method for #{k.underscore}= #{v}"
+          end
       end
     end
   end

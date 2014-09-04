@@ -28,7 +28,11 @@ class Api < ActiveRecord::Base
             message.from_hash(m)
           end
         else
-          self.send("#{k.underscore}=", v)
+          begin
+            self.send("#{k.underscore}=", v)
+          rescue
+            puts "NO method for #{k.underscore}= #{v}"
+          end
       end
     end
   end

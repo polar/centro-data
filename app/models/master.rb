@@ -14,7 +14,11 @@ class Master < ActiveRecord::Base
         when "api"
           self.api_url = v
         else
-          self.send("#{k.underscore}=", v)
+          begin
+            self.send("#{k.underscore}=", v)
+          rescue
+            puts "NO method for #{k.underscore}= #{v}"
+          end
       end
     end
 

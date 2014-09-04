@@ -25,7 +25,11 @@ class Route < ActiveRecord::Base
         when "type"
           self.route_type = v
         else
-          self.send("#{k.underscore}=", v)
+          begin
+            self.send("#{k.underscore}=", v)
+          rescue
+            puts "NO method for #{k.underscore}= #{v}"
+          end
       end
     end
 
